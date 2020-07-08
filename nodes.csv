@@ -1,0 +1,2226 @@
+Id,Label,node-type
+2,From USA,cluster
+3,From USA,cluster
+8,From United Kingdom,cluster
+9,From United Kingdom,cluster
+16,From United Kingdom,cluster
+22,From Middle East,cluster
+30,From the rest of Europe,cluster
+38,From USA,cluster
+49,From the rest of Europe,cluster
+50,From the rest of Europe,cluster
+55,From United Kingdom,cluster
+59,From United Kingdom,cluster
+61,From United Kingdom,cluster
+65,From Middle East,cluster
+66,From Middle East,cluster
+67,From Middle East,cluster
+69,From Middle East,cluster
+70,From Middle East,cluster
+71,From Middle East,cluster
+72,From Middle East,cluster
+73,From Middle East,cluster
+75,From South America,cluster
+76,From Middle East,cluster
+84,Others,cluster
+92,From United Kingdom,cluster
+95,Pharmaceutical Company in Nanjangud,cluster
+96,Pharmaceutical Company in Nanjangud,cluster
+99,From United Kingdom,cluster
+105,Pharmaceutical Company in Nanjangud,cluster
+109,Pharmaceutical Company in Nanjangud,cluster
+110,Pharmaceutical Company in Nanjangud,cluster
+111,Pharmaceutical Company in Nanjangud,cluster
+112,Pharmaceutical Company in Nanjangud,cluster
+113,Pharmaceutical Company in Nanjangud,cluster
+129,From United Kingdom,cluster
+130,From United Kingdom,cluster
+131,Unknown,cluster
+140,Pharmaceutical Company in Nanjangud,cluster
+152,From South America,cluster
+154,Pharmaceutical Company in Nanjangud,cluster
+161,Unknown,cluster
+162,Unknown,cluster
+165,Unknown,cluster
+171,Others,cluster
+172,Others,cluster
+173,Others,cluster
+174,TJ Congregation from 13th to 18th March in Delhi,cluster
+178,Severe Acute Respiratory Infection,cluster
+179,Others,cluster
+182,TJ Congregation from 13th to 18th March in Delhi,cluster
+183,Pharmaceutical Company in Nanjangud,cluster
+184,Pharmaceutical Company in Nanjangud,cluster
+185,Pharmaceutical Company in Nanjangud,cluster
+186,Unknown,cluster
+187,Unknown,cluster
+188,Unknown,cluster
+191,Others,cluster
+192,TJ Congregation from 13th to 18th March in Delhi,cluster
+193,TJ Congregation from 13th to 18th March in Delhi,cluster
+198,Others,cluster
+199,Others,cluster
+200,Pharmaceutical Company in Nanjangud,cluster
+201,Pharmaceutical Company in Nanjangud,cluster
+202,Pharmaceutical Company in Nanjangud,cluster
+203,Pharmaceutical Company in Nanjangud,cluster
+204,Pharmaceutical Company in Nanjangud,cluster
+206,Others,cluster
+207,Others,cluster
+208,Severe Acute Respiratory Infection,cluster
+209,Pharmaceutical Company in Nanjangud,cluster
+210,Pharmaceutical Company in Nanjangud,cluster
+211,TJ Congregation from 13th to 18th March in Delhi,cluster
+212,Pharmaceutical Company in Nanjangud,cluster
+213,Pharmaceutical Company in Nanjangud,cluster
+214,Pharmaceutical Company in Nanjangud,cluster
+215,From United Kingdom,cluster
+216,Pharmaceutical Company in Nanjangud,cluster
+220,Severe Acute Respiratory Infection,cluster
+222,Severe Acute Respiratory Infection,cluster
+223,TJ Congregation from 13th to 18th March in Delhi,cluster
+224,TJ Congregation from 13th to 18th March in Delhi,cluster
+225,TJ Congregation from 13th to 18th March in Delhi,cluster
+226,TJ Congregation from 13th to 18th March in Delhi,cluster
+233,Others,cluster
+234,Others,cluster
+235,Others,cluster
+236,Others,cluster
+237,Others,cluster
+238,Others,cluster
+239,Others,cluster
+240,Others,cluster
+241,TJ Congregation from 13th to 18th March in Delhi,cluster
+242,TJ Congregation from 13th to 18th March in Delhi,cluster
+243,TJ Congregation from 13th to 18th March in Delhi,cluster
+244,TJ Congregation from 13th to 18th March in Delhi,cluster
+245,TJ Congregation from 13th to 18th March in Delhi,cluster
+248,Unknown,cluster
+249,Unknown,cluster
+251,Unknown,cluster
+254,Severe Acute Respiratory Infection,cluster
+255,Others,cluster
+256,Severe Acute Respiratory Infection,cluster
+257,Severe Acute Respiratory Infection,cluster
+259,Others,cluster
+260,Severe Acute Respiratory Infection,cluster
+262,Unknown,cluster
+275,Severe Acute Respiratory Infection,cluster
+276,Severe Acute Respiratory Infection,cluster
+277,Severe Acute Respiratory Infection,cluster
+278,Severe Acute Respiratory Infection,cluster
+279,TJ Congregation from 13th to 18th March in Delhi,cluster
+280,Severe Acute Respiratory Infection,cluster
+282,TJ Congregation from 13th to 18th March in Delhi,cluster
+283,TJ Congregation from 13th to 18th March in Delhi,cluster
+284,TJ Congregation from 13th to 18th March in Delhi,cluster
+285,TJ Congregation from 13th to 18th March in Delhi,cluster
+286,TJ Congregation from 13th to 18th March in Delhi,cluster
+287,TJ Congregation from 13th to 18th March in Delhi,cluster
+288,TJ Congregation from 13th to 18th March in Delhi,cluster
+289,TJ Congregation from 13th to 18th March in Delhi,cluster
+298,TJ Congregation from 13th to 18th March in Delhi,cluster
+299,TJ Congregation from 13th to 18th March in Delhi,cluster
+300,TJ Congregation from 13th to 18th March in Delhi,cluster
+301,TJ Congregation from 13th to 18th March in Delhi,cluster
+302,Influenza like illness,cluster
+304,Severe Acute Respiratory Infection,cluster
+305,Severe Acute Respiratory Infection,cluster
+306,Severe Acute Respiratory Infection,cluster
+307,Severe Acute Respiratory Infection,cluster
+308,Severe Acute Respiratory Infection,cluster
+309,Severe Acute Respiratory Infection,cluster
+310,Unknown,cluster
+312,Pharmaceutical Company in Nanjangud,cluster
+313,Severe Acute Respiratory Infection,cluster
+316,Others,cluster
+317,Others,cluster
+318,Pharmaceutical Company in Nanjangud,cluster
+319,Pharmaceutical Company in Nanjangud,cluster
+320,Pharmaceutical Company in Nanjangud,cluster
+321,Severe Acute Respiratory Infection,cluster
+322,Others,cluster
+323,Others,cluster
+324,Others,cluster
+326,Severe Acute Respiratory Infection,cluster
+327,Severe Acute Respiratory Infection,cluster
+329,Severe Acute Respiratory Infection,cluster
+330,Severe Acute Respiratory Infection,cluster
+331,Others,cluster
+332,Unknown,cluster
+333,Unknown,cluster
+334,Unknown,cluster
+335,Unknown,cluster
+336,Unknown,cluster
+337,Unknown,cluster
+338,Severe Acute Respiratory Infection,cluster
+339,Severe Acute Respiratory Infection,cluster
+340,Severe Acute Respiratory Infection,cluster
+341,Pharmaceutical Company in Nanjangud,cluster
+342,Pharmaceutical Company in Nanjangud,cluster
+343,Pharmaceutical Company in Nanjangud,cluster
+344,Pharmaceutical Company in Nanjangud,cluster
+345,Pharmaceutical Company in Nanjangud,cluster
+346,Pharmaceutical Company in Nanjangud,cluster
+347,Pharmaceutical Company in Nanjangud,cluster
+348,Pharmaceutical Company in Nanjangud,cluster
+350,Others,cluster
+351,Others,cluster
+352,Others,cluster
+353,Others,cluster
+355,TJ Congregation from 13th to 18th March in Delhi,cluster
+356,TJ Congregation from 13th to 18th March in Delhi,cluster
+357,TJ Congregation from 13th to 18th March in Delhi,cluster
+358,TJ Congregation from 13th to 18th March in Delhi,cluster
+359,TJ Congregation from 13th to 18th March in Delhi,cluster
+360,Others,cluster
+361,TJ Congregation from 13th to 18th March in Delhi,cluster
+362,Severe Acute Respiratory Infection,cluster
+363,Others,cluster
+364,TJ Congregation from 13th to 18th March in Delhi,cluster
+365,Pharmaceutical Company in Nanjangud,cluster
+366,Pharmaceutical Company in Nanjangud,cluster
+367,Unknown,cluster
+368,Unknown,cluster
+370,Unknown,cluster
+371,Others,cluster
+372,Unknown,cluster
+373,Unknown,cluster
+374,Unknown,cluster
+375,Pharmaceutical Company in Nanjangud,cluster
+376,Others,cluster
+377,Others,cluster
+378,Others,cluster
+379,Unknown,cluster
+380,Unknown,cluster
+382,Pharmaceutical Company in Nanjangud,cluster
+383,Pharmaceutical Company in Nanjangud,cluster
+384,Pharmaceutical Company in Nanjangud,cluster
+387,Pharmaceutical Company in Nanjangud,cluster
+388,Pharmaceutical Company in Nanjangud,cluster
+389,Others,cluster
+391,Severe Acute Respiratory Infection,cluster
+392,Others,cluster
+393,Others,cluster
+394,Severe Acute Respiratory Infection,cluster
+395,Others,cluster
+396,Unknown,cluster
+397,Severe Acute Respiratory Infection,cluster
+398,Severe Acute Respiratory Infection,cluster
+399,Severe Acute Respiratory Infection,cluster
+400,Severe Acute Respiratory Infection,cluster
+401,Severe Acute Respiratory Infection,cluster
+402,Severe Acute Respiratory Infection,cluster
+403,Severe Acute Respiratory Infection,cluster
+404,Severe Acute Respiratory Infection,cluster
+405,Unknown,cluster
+406,Severe Acute Respiratory Infection,cluster
+407,Severe Acute Respiratory Infection,cluster
+408,TJ Congregation from 13th to 18th March in Delhi,cluster
+410,Unknown,cluster
+411,Unknown,cluster
+415,Unknown,cluster
+416,Pharmaceutical Company in Nanjangud,cluster
+417,Pharmaceutical Company in Nanjangud,cluster
+418,Others,cluster
+420,Severe Acute Respiratory Infection,cluster
+421,Unknown,cluster
+423,Others,cluster
+424,Others,cluster
+425,Others,cluster
+426,Pharmaceutical Company in Nanjangud,cluster
+427,Pharmaceutical Company in Nanjangud,cluster
+428,Severe Acute Respiratory Infection,cluster
+430,Others,cluster
+431,Others,cluster
+432,Severe Acute Respiratory Infection,cluster
+433,Severe Acute Respiratory Infection,cluster
+434,Severe Acute Respiratory Infection,cluster
+435,Severe Acute Respiratory Infection,cluster
+436,Severe Acute Respiratory Infection,cluster
+437,Severe Acute Respiratory Infection,cluster
+438,Severe Acute Respiratory Infection,cluster
+439,Severe Acute Respiratory Infection,cluster
+440,Severe Acute Respiratory Infection,cluster
+441,Severe Acute Respiratory Infection,cluster
+442,Others,cluster
+443,Others,cluster
+444,Severe Acute Respiratory Infection,cluster
+445,Unknown,cluster
+448,TJ Congregation from 13th to 18th March in Delhi,cluster
+451,Severe Acute Respiratory Infection,cluster
+455,Unknown,cluster
+457,Severe Acute Respiratory Infection,cluster
+458,Severe Acute Respiratory Infection,cluster
+459,Severe Acute Respiratory Infection,cluster
+460,Severe Acute Respiratory Infection,cluster
+461,Severe Acute Respiratory Infection,cluster
+462,Severe Acute Respiratory Infection,cluster
+463,TJ Congregation from 13th to 18th March in Delhi,cluster
+464,Others,cluster
+467,Severe Acute Respiratory Infection,cluster
+468,Unknown,cluster
+469,Severe Acute Respiratory Infection,cluster
+470,Severe Acute Respiratory Infection,cluster
+471,Severe Acute Respiratory Infection,cluster
+472,Severe Acute Respiratory Infection,cluster
+473,Severe Acute Respiratory Infection,cluster
+474,Severe Acute Respiratory Infection,cluster
+476,Severe Acute Respiratory Infection,cluster
+477,Severe Acute Respiratory Infection,cluster
+478,Severe Acute Respiratory Infection,cluster
+479,Severe Acute Respiratory Infection,cluster
+480,Severe Acute Respiratory Infection,cluster
+481,Pharmaceutical Company in Nanjangud,cluster
+482,TJ Congregation from 13th to 18th March in Delhi,cluster
+483,TJ Congregation from 13th to 18th March in Delhi,cluster
+484,TJ Congregation from 13th to 18th March in Delhi,cluster
+485,TJ Congregation from 13th to 18th March in Delhi,cluster
+486,TJ Congregation from 13th to 18th March in Delhi,cluster
+487,TJ Congregation from 13th to 18th March in Delhi,cluster
+489,Severe Acute Respiratory Infection,cluster
+490,Severe Acute Respiratory Infection,cluster
+491,Severe Acute Respiratory Infection,cluster
+492,Severe Acute Respiratory Infection,cluster
+493,Severe Acute Respiratory Infection,cluster
+494,TJ Congregation from 13th to 18th March in Delhi,cluster
+495,TJ Congregation from 13th to 18th March in Delhi,cluster
+496,TJ Congregation from 13th to 18th March in Delhi,cluster
+497,Pharmaceutical Company in Nanjangud,cluster
+498,Severe Acute Respiratory Infection,cluster
+499,Severe Acute Respiratory Infection,cluster
+500,Severe Acute Respiratory Infection,cluster
+501,Severe Acute Respiratory Infection,cluster
+502,Severe Acute Respiratory Infection,cluster
+503,Others,cluster
+506,Severe Acute Respiratory Infection,cluster
+507,Severe Acute Respiratory Infection,cluster
+508,Influenza like illness,cluster
+509,Influenza like illness,cluster
+510,Severe Acute Respiratory Infection,cluster
+512,Others,cluster
+515,Others,cluster
+516,Others,cluster
+517,Others,cluster
+518,Others,cluster
+519,Others,cluster
+520,Others,cluster
+521,Others,cluster
+522,Influenza like illness,cluster
+523,Influenza like illness,cluster
+524,Others,cluster
+525,Others,cluster
+526,Others,cluster
+527,Others,cluster
+528,Others,cluster
+529,Others,cluster
+530,Others,cluster
+531,Others,cluster
+532,Others,cluster
+534,Pharmaceutical Company in Nanjangud,cluster
+536,Severe Acute Respiratory Infection,cluster
+537,Severe Acute Respiratory Infection,cluster
+538,Severe Acute Respiratory Infection,cluster
+539,TJ Congregation from 13th to 18th March in Delhi,cluster
+540,TJ Congregation from 13th to 18th March in Delhi,cluster
+541,Others,cluster
+542,Others,cluster
+543,TJ Congregation from 13th to 18th March in Delhi,cluster
+544,TJ Congregation from 13th to 18th March in Delhi,cluster
+545,TJ Congregation from 13th to 18th March in Delhi,cluster
+546,TJ Congregation from 13th to 18th March in Delhi,cluster
+547,TJ Congregation from 13th to 18th March in Delhi,cluster
+548,TJ Congregation from 13th to 18th March in Delhi,cluster
+549,TJ Congregation from 13th to 18th March in Delhi,cluster
+550,TJ Congregation from 13th to 18th March in Delhi,cluster
+551,Others,cluster
+552,TJ Congregation from 13th to 18th March in Delhi,cluster
+553,Unknown,cluster
+558,Influenza like illness,cluster
+559,Unknown,cluster
+560,Unknown,cluster
+561,Unknown,cluster
+562,Unknown,cluster
+563,Unknown,cluster
+564,Severe Acute Respiratory Infection,cluster
+569,From Maharashtra,cluster
+570,Others,cluster
+571,Others,cluster
+572,Others,cluster
+573,Others,cluster
+574,TJ Congregation from 13th to 18th March in Delhi,cluster
+575,TJ Congregation from 13th to 18th March in Delhi,cluster
+576,TJ Congregation from 13th to 18th March in Delhi,cluster
+577,Severe Acute Respiratory Infection,cluster
+578,Severe Acute Respiratory Infection,cluster
+579,Severe Acute Respiratory Infection,cluster
+580,Severe Acute Respiratory Infection,cluster
+581,Severe Acute Respiratory Infection,cluster
+582,Severe Acute Respiratory Infection,cluster
+583,Severe Acute Respiratory Infection,cluster
+584,Severe Acute Respiratory Infection,cluster
+585,Severe Acute Respiratory Infection,cluster
+586,Severe Acute Respiratory Infection,cluster
+588,Others,cluster
+591,Unknown,cluster
+592,Unknown,cluster
+593,Severe Acute Respiratory Infection,cluster
+594,Severe Acute Respiratory Infection,cluster
+595,Severe Acute Respiratory Infection,cluster
+596,TJ Congregation from 13th to 18th March in Delhi,cluster
+597,Influenza like illness,cluster
+598,Severe Acute Respiratory Infection,cluster
+599,Influenza like illness,cluster
+600,Influenza like illness,cluster
+601,Influenza like illness,cluster
+602,Others,cluster
+603,Others,cluster
+605,Unknown,cluster
+606,Unknown,cluster
+612,Others,cluster
+613,Others,cluster
+614,Others,cluster
+615,Severe Acute Respiratory Infection,cluster
+616,Influenza like illness,cluster
+617,Influenza like illness,cluster
+618,Influenza like illness,cluster
+619,Influenza like illness,cluster
+620,Influenza like illness,cluster
+621,Influenza like illness,cluster
+622,Influenza like illness,cluster
+624,Severe Acute Respiratory Infection,cluster
+625,Influenza like illness,cluster
+626,Influenza like illness,cluster
+627,Influenza like illness,cluster
+628,Influenza like illness,cluster
+629,Influenza like illness,cluster
+630,Influenza like illness,cluster
+631,Influenza like illness,cluster
+632,Influenza like illness,cluster
+633,Influenza like illness,cluster
+634,Influenza like illness,cluster
+635,Influenza like illness,cluster
+636,Severe Acute Respiratory Infection,cluster
+640,Unknown,cluster
+641,Severe Acute Respiratory Infection,cluster
+643,Severe Acute Respiratory Infection,cluster
+644,Severe Acute Respiratory Infection,cluster
+645,Severe Acute Respiratory Infection,cluster
+646,Severe Acute Respiratory Infection,cluster
+647,Severe Acute Respiratory Infection,cluster
+648,Severe Acute Respiratory Infection,cluster
+649,Severe Acute Respiratory Infection,cluster
+651,Influenza like illness,cluster
+653,Severe Acute Respiratory Infection,cluster
+655,Unknown,cluster
+656,Unknown,cluster
+658,Severe Acute Respiratory Infection,cluster
+660,Severe Acute Respiratory Infection,cluster
+661,Severe Acute Respiratory Infection,cluster
+662,Severe Acute Respiratory Infection,cluster
+663,Severe Acute Respiratory Infection,cluster
+664,Severe Acute Respiratory Infection,cluster
+665,Severe Acute Respiratory Infection,cluster
+666,Severe Acute Respiratory Infection,cluster
+667,Severe Acute Respiratory Infection,cluster
+668,Severe Acute Respiratory Infection,cluster
+669,Severe Acute Respiratory Infection,cluster
+670,Severe Acute Respiratory Infection,cluster
+671,Severe Acute Respiratory Infection,cluster
+672,From Maharashtra,cluster
+674,Severe Acute Respiratory Infection,cluster
+675,Severe Acute Respiratory Infection,cluster
+676,Severe Acute Respiratory Infection,cluster
+677,Influenza like illness,cluster
+678,Influenza like illness,cluster
+679,Influenza like illness,cluster
+681,Severe Acute Respiratory Infection,cluster
+682,Severe Acute Respiratory Infection,cluster
+683,Severe Acute Respiratory Infection,cluster
+684,Severe Acute Respiratory Infection,cluster
+685,Severe Acute Respiratory Infection,cluster
+686,Severe Acute Respiratory Infection,cluster
+687,Severe Acute Respiratory Infection,cluster
+688,Severe Acute Respiratory Infection,cluster
+689,Severe Acute Respiratory Infection,cluster
+690,Severe Acute Respiratory Infection,cluster
+691,Severe Acute Respiratory Infection,cluster
+692,Severe Acute Respiratory Infection,cluster
+693,Severe Acute Respiratory Infection,cluster
+697,From the Southern States,cluster
+698,Severe Acute Respiratory Infection,cluster
+699,Severe Acute Respiratory Infection,cluster
+700,TJ Congregation from 13th to 18th March in Delhi,cluster
+702,Severe Acute Respiratory Infection,cluster
+703,Severe Acute Respiratory Infection,cluster
+704,Severe Acute Respiratory Infection,cluster
+708,Severe Acute Respiratory Infection,cluster
+709,Severe Acute Respiratory Infection,cluster
+710,Severe Acute Respiratory Infection,cluster
+711,Severe Acute Respiratory Infection,cluster
+713,TJ Congregation from 13th to 18th March in Delhi,cluster
+714,TJ Congregation from 13th to 18th March in Delhi,cluster
+715,TJ Congregation from 13th to 18th March in Delhi,cluster
+716,TJ Congregation from 13th to 18th March in Delhi,cluster
+717,TJ Congregation from 13th to 18th March in Delhi,cluster
+718,TJ Congregation from 13th to 18th March in Delhi,cluster
+719,TJ Congregation from 13th to 18th March in Delhi,cluster
+720,TJ Congregation from 13th to 18th March in Delhi,cluster
+721,TJ Congregation from 13th to 18th March in Delhi,cluster
+722,TJ Congregation from 13th to 18th March in Delhi,cluster
+723,TJ Congregation from 13th to 18th March in Delhi,cluster
+724,Severe Acute Respiratory Infection,cluster
+725,Severe Acute Respiratory Infection,cluster
+726,Severe Acute Respiratory Infection,cluster
+727,Severe Acute Respiratory Infection,cluster
+728,Influenza like illness,cluster
+729,Influenza like illness,cluster
+730,Influenza like illness,cluster
+731,Influenza like illness,cluster
+732,Influenza like illness,cluster
+733,Influenza like illness,cluster
+734,Influenza like illness,cluster
+735,Influenza like illness,cluster
+736,Influenza like illness,cluster
+737,Influenza like illness,cluster
+739,Influenza like illness,cluster
+740,Influenza like illness,cluster
+741,Influenza like illness,cluster
+742,Influenza like illness,cluster
+743,Influenza like illness,cluster
+744,Influenza like illness,cluster
+745,Influenza like illness,cluster
+746,Influenza like illness,cluster
+747,Influenza like illness,cluster
+748,Influenza like illness,cluster
+749,Influenza like illness,cluster
+750,Influenza like illness,cluster
+754,Influenza like illness,cluster
+755,Influenza like illness,cluster
+756,Influenza like illness,cluster
+757,Influenza like illness,cluster
+758,Influenza like illness,cluster
+759,Severe Acute Respiratory Infection,cluster
+760,Severe Acute Respiratory Infection,cluster
+761,Containment Zones,cluster
+762,Containment Zones,cluster
+763,Containment Zones,cluster
+766,Severe Acute Respiratory Infection,cluster
+767,Severe Acute Respiratory Infection,cluster
+768,Severe Acute Respiratory Infection,cluster
+769,Severe Acute Respiratory Infection,cluster
+770,Severe Acute Respiratory Infection,cluster
+771,Severe Acute Respiratory Infection,cluster
+773,Containment Zones,cluster
+774,Containment Zones,cluster
+775,Containment Zones,cluster
+776,Unknown,cluster
+777,Severe Acute Respiratory Infection,cluster
+778,Severe Acute Respiratory Infection,cluster
+779,Severe Acute Respiratory Infection,cluster
+780,Influenza like illness,cluster
+781,Influenza like illness,cluster
+782,Influenza like illness,cluster
+783,Influenza like illness,cluster
+784,Influenza like illness,cluster
+785,Influenza like illness,cluster
+786,Influenza like illness,cluster
+791,Influenza like illness,cluster
+797,Influenza like illness,cluster
+798,Influenza like illness,cluster
+799,Influenza like illness,cluster
+800,Influenza like illness,cluster
+801,Influenza like illness,cluster
+802,Influenza like illness,cluster
+803,Influenza like illness,cluster
+804,Unknown,cluster
+807,Severe Acute Respiratory Infection,cluster
+850,Severe Acute Respiratory Infection,cluster
+851,Severe Acute Respiratory Infection,cluster
+852,Severe Acute Respiratory Infection,cluster
+855,Severe Acute Respiratory Infection,cluster
+856,Unknown,cluster
+857,Severe Acute Respiratory Infection,cluster
+858,Severe Acute Respiratory Infection,cluster
+859,Influenza like illness,cluster
+860,Influenza like illness,cluster
+864,Unknown,cluster
+866,Others,cluster
+877,Severe Acute Respiratory Infection,cluster
+878,Severe Acute Respiratory Infection,cluster
+888,Containment Zones,cluster
+889,Containment Zones,cluster
+890,Containment Zones,cluster
+912,Severe Acute Respiratory Infection,cluster
+913,Severe Acute Respiratory Infection,cluster
+914,Influenza like illness,cluster
+921,Influenza like illness,cluster
+922,Influenza like illness,cluster
+923,Influenza like illness,cluster
+924,Influenza like illness,cluster
+925,Influenza like illness,cluster
+926,Influenza like illness,cluster
+929,Influenza like illness,cluster
+933,Influenza like illness,cluster
+934,Influenza like illness,cluster
+947,Severe Acute Respiratory Infection,cluster
+952,From Maharashtra,cluster
+953,Influenza like illness,cluster
+955,From Maharashtra,cluster
+956,From Maharashtra,cluster
+957,From Maharashtra,cluster
+960,Severe Acute Respiratory Infection,cluster
+965,Containment Zones,cluster
+966,Containment Zones,cluster
+967,Containment Zones,cluster
+968,Containment Zones,cluster
+969,Containment Zones,cluster
+982,Others,cluster
+983,Severe Acute Respiratory Infection,cluster
+984,Influenza like illness,cluster
+985,Containment Zones,cluster
+986,Containment Zones,cluster
+987,Containment Zones,cluster
+988,Unknown,cluster
+989,Unknown,cluster
+990,Containment Zones,cluster
+991,Containment Zones,cluster
+1000,Influenza like illness,cluster
+1017,Severe Acute Respiratory Infection,cluster
+1018,Severe Acute Respiratory Infection,cluster
+1019,Severe Acute Respiratory Infection,cluster
+1020,Severe Acute Respiratory Infection,cluster
+1021,Severe Acute Respiratory Infection,cluster
+1022,Severe Acute Respiratory Infection,cluster
+1023,Severe Acute Respiratory Infection,cluster
+1024,Severe Acute Respiratory Infection,cluster
+1025,Severe Acute Respiratory Infection,cluster
+1026,Severe Acute Respiratory Infection,cluster
+1027,Severe Acute Respiratory Infection,cluster
+1061,Influenza like illness,cluster
+1064,Severe Acute Respiratory Infection,cluster
+1065,Severe Acute Respiratory Infection,cluster
+1066,Severe Acute Respiratory Infection,cluster
+1067,Severe Acute Respiratory Infection,cluster
+1068,Severe Acute Respiratory Infection,cluster
+1069,Severe Acute Respiratory Infection,cluster
+1070,Severe Acute Respiratory Infection,cluster
+1071,Severe Acute Respiratory Infection,cluster
+1072,Severe Acute Respiratory Infection,cluster
+1073,Severe Acute Respiratory Infection,cluster
+1074,Severe Acute Respiratory Infection,cluster
+1075,Severe Acute Respiratory Infection,cluster
+1076,Severe Acute Respiratory Infection,cluster
+1077,Severe Acute Respiratory Infection,cluster
+1080,Influenza like illness,cluster
+1081,Influenza like illness,cluster
+1082,Influenza like illness,cluster
+1083,Influenza like illness,cluster
+1085,Containment Zones,cluster
+1086,Influenza like illness,cluster
+1087,Influenza like illness,cluster
+1091,Severe Acute Respiratory Infection,cluster
+1112,From Maharashtra,cluster
+1113,From Maharashtra,cluster
+1114,From Maharashtra,cluster
+1122,Severe Acute Respiratory Infection,cluster
+1124,Influenza like illness,cluster
+1125,From Maharashtra,cluster
+1132,Containment Zones,cluster
+1134,Containment Zones,cluster
+1147,Influenza like illness,cluster
+1158,Severe Acute Respiratory Infection,cluster
+1159,Severe Acute Respiratory Infection,cluster
+1160,Severe Acute Respiratory Infection,cluster
+1161,Severe Acute Respiratory Infection,cluster
+1162,Severe Acute Respiratory Infection,cluster
+1163,Severe Acute Respiratory Infection,cluster
+1164,Severe Acute Respiratory Infection,cluster
+1165,Severe Acute Respiratory Infection,cluster
+1166,Severe Acute Respiratory Infection,cluster
+1167,Severe Acute Respiratory Infection,cluster
+1168,Severe Acute Respiratory Infection,cluster
+1169,Severe Acute Respiratory Infection,cluster
+1170,Severe Acute Respiratory Infection,cluster
+1171,Severe Acute Respiratory Infection,cluster
+1172,Severe Acute Respiratory Infection,cluster
+1179,Severe Acute Respiratory Infection,cluster
+1180,Severe Acute Respiratory Infection,cluster
+1193,Containment Zones,cluster
+1206,Influenza like illness,cluster
+1209,Severe Acute Respiratory Infection,cluster
+1226,TJ Congregation from 13th to 18th March in Delhi,cluster
+1247,Severe Acute Respiratory Infection,cluster
+1248,Severe Acute Respiratory Infection,cluster
+1249,Severe Acute Respiratory Infection,cluster
+1250,Severe Acute Respiratory Infection,cluster
+1252,Severe Acute Respiratory Infection,cluster
+1253,Severe Acute Respiratory Infection,cluster
+1254,Influenza like illness,cluster
+1255,Influenza like illness,cluster
+1268,Containment Zones,cluster
+1269,Containment Zones,cluster
+1292,Influenza like illness,cluster
+1293,Influenza like illness,cluster
+1294,Containment Zones,cluster
+1309,Severe Acute Respiratory Infection,cluster
+1370,Influenza like illness,cluster
+1371,Influenza like illness,cluster
+1372,Severe Acute Respiratory Infection,cluster
+1373,Severe Acute Respiratory Infection,cluster
+1374,Containment Zones,cluster
+1392,Severe Acute Respiratory Infection,cluster
+1393,Severe Acute Respiratory Infection,cluster
+1394,Severe Acute Respiratory Infection,cluster
+1395,Severe Acute Respiratory Infection,cluster
+1405,Influenza like illness,cluster
+1406,Influenza like illness,cluster
+1430,From the Southern States,cluster
+1431,From the Southern States,cluster
+1451,Containment Zones,cluster
+1452,Containment Zones,cluster
+1453,Unknown,cluster
+1454,Containment Zones,cluster
+1455,Containment Zones,cluster
+1456,Containment Zones,cluster
+1457,Severe Acute Respiratory Infection,cluster
+1458,Severe Acute Respiratory Infection,cluster
+1463,From the Southern States,cluster
+1464,From the Southern States,cluster
+1467,From Maharashtra,cluster
+1482,Unknown,cluster
+1484,Unknown,cluster
+1485,Severe Acute Respiratory Infection,cluster
+1486,From Maharashtra,cluster
+1487,From Maharashtra,cluster
+1488,Influenza like illness,cluster
+1550,Containment Zones,cluster
+1551,Containment Zones,cluster
+1552,Containment Zones,cluster
+1553,Severe Acute Respiratory Infection,cluster
+1562,TJ Congregation from 13th to 18th March in Delhi,cluster
+1588,Severe Acute Respiratory Infection,cluster
+1597,From Gujarat,cluster
+1604,Influenza like illness,cluster
+1624,Influenza like illness,cluster
+1656,Containment Zones,cluster
+1657,Containment Zones,cluster
+1658,Containment Zones,cluster
+1668,Containment Zones,cluster
+1669,Containment Zones,cluster
+1732,From the Southern States,cluster
+1734,Severe Acute Respiratory Infection,cluster
+1794,Severe Acute Respiratory Infection,cluster
+1795,Severe Acute Respiratory Infection,cluster
+1808,Containment Zones,cluster
+1809,Containment Zones,cluster
+1812,From the Southern States,cluster
+1813,From the Southern States,cluster
+1852,Containment Zones,cluster
+1932,Severe Acute Respiratory Infection,cluster
+1933,Severe Acute Respiratory Infection,cluster
+1934,Severe Acute Respiratory Infection,cluster
+1935,Severe Acute Respiratory Infection,cluster
+1936,Severe Acute Respiratory Infection,cluster
+1937,Severe Acute Respiratory Infection,cluster
+1938,Severe Acute Respiratory Infection,cluster
+1963,Containment Zones,cluster
+1964,Containment Zones,cluster
+2006,From Maharashtra,cluster
+2007,From Maharashtra,cluster
+2008,From Maharashtra,cluster
+2009,From Maharashtra,cluster
+2011,Containment Zones,cluster
+2023,From Maharashtra,cluster
+2087,From Gujarat,cluster
+2093,From the Southern States,cluster
+2094,From the Southern States,cluster
+2095,From the Southern States,cluster
+2137,Containment Zones,cluster
+2138,From Maharashtra,cluster
+2156,From Maharashtra,cluster
+2157,From Maharashtra,cluster
+2158,From Maharashtra,cluster
+2168,From Maharashtra,cluster
+2177,Unknown,cluster
+2183,From the Southern States,cluster
+2184,From the Southern States,cluster
+2257,Influenza like illness,cluster
+2275,Containment Zones,cluster
+2276,Containment Zones,cluster
+2277,Containment Zones,cluster
+2278,Containment Zones,cluster
+2279,Influenza like illness,cluster
+2281,Influenza like illness,cluster
+2282,Influenza like illness,cluster
+2320,From Maharashtra,cluster
+2331,From Maharashtra,cluster
+2332,Containment Zones,cluster
+2333,Unknown,cluster
+2412,Influenza like illness,cluster
+2413,Influenza like illness,cluster
+2414,Influenza like illness,cluster
+2415,Severe Acute Respiratory Infection,cluster
+2416,Influenza like illness,cluster
+2417,Containment Zones,cluster
+2441,Unknown,cluster
+2443,Unknown,cluster
+2486,Containment Zones,cluster
+2487,Containment Zones,cluster
+2488,Containment Zones,cluster
+2489,Containment Zones,cluster
+2490,Containment Zones,cluster
+2491,Containment Zones,cluster
+2557,Severe Acute Respiratory Infection,cluster
+2558,Severe Acute Respiratory Infection,cluster
+2559,From the Southern States,cluster
+2648,Unknown,cluster
+2767,Containment Zones,cluster
+2768,Containment Zones,cluster
+2770,Containment Zones,cluster
+2807,From Maharashtra,cluster
+2818,Containment Zones,cluster
+2819,Containment Zones,cluster
+2820,Influenza like illness,cluster
+2821,Severe Acute Respiratory Infection,cluster
+2822,Influenza like illness,cluster
+2848,Containment Zones,cluster
+2849,Severe Acute Respiratory Infection,cluster
+2850,Severe Acute Respiratory Infection,cluster
+2871,Severe Acute Respiratory Infection,cluster
+2901,Severe Acute Respiratory Infection,cluster
+2907,Severe Acute Respiratory Infection,cluster
+2908,Severe Acute Respiratory Infection,cluster
+2909,Severe Acute Respiratory Infection,cluster
+2910,Severe Acute Respiratory Infection,cluster
+2911,Severe Acute Respiratory Infection,cluster
+2912,Severe Acute Respiratory Infection,cluster
+2913,Severe Acute Respiratory Infection,cluster
+2914,Severe Acute Respiratory Infection,cluster
+2915,Severe Acute Respiratory Infection,cluster
+2916,Severe Acute Respiratory Infection,cluster
+2931,Severe Acute Respiratory Infection,cluster
+2932,Severe Acute Respiratory Infection,cluster
+2933,Severe Acute Respiratory Infection,cluster
+2934,Severe Acute Respiratory Infection,cluster
+3073,Containment Zones,cluster
+3074,Influenza like illness,cluster
+3203,From Maharashtra,cluster
+3204,From Maharashtra,cluster
+3205,From Maharashtra,cluster
+3216,Containment Zones,cluster
+3217,Containment Zones,cluster
+3270,Severe Acute Respiratory Infection,cluster
+3307,From Maharashtra,cluster
+3311,Influenza like illness,cluster
+3312,Influenza like illness,cluster
+3314,Severe Acute Respiratory Infection,cluster
+3334,Severe Acute Respiratory Infection,cluster
+3411,Unknown,cluster
+3435,Severe Acute Respiratory Infection,cluster
+3462,Influenza like illness,cluster
+3463,Influenza like illness,cluster
+3464,Influenza like illness,cluster
+3470,Unknown,cluster
+3471,Unknown,cluster
+3472,Unknown,cluster
+3635,Containment Zones,cluster
+3638,Containment Zones,cluster
+3639,Influenza like illness,cluster
+3640,Containment Zones,cluster
+3657,Severe Acute Respiratory Infection,cluster
+3796,Severe Acute Respiratory Infection,cluster
+3861,Severe Acute Respiratory Infection,cluster
+3862,Severe Acute Respiratory Infection,cluster
+3870,Influenza like illness,cluster
+3871,From Maharashtra,cluster
+3895,From Maharashtra,cluster
+3897,Influenza like illness,cluster
+3900,Influenza like illness,cluster
+3913,From Maharashtra,cluster
+3927,Unknown,cluster
+3928,Unknown,cluster
+4083,Containment Zones,cluster
+4084,Containment Zones,cluster
+4085,Severe Acute Respiratory Infection,cluster
+4086,Severe Acute Respiratory Infection,cluster
+4087,Severe Acute Respiratory Infection,cluster
+4088,Severe Acute Respiratory Infection,cluster
+4089,Severe Acute Respiratory Infection,cluster
+4090,Containment Zones,cluster
+4091,Containment Zones,cluster
+4092,Containment Zones,cluster
+4093,Influenza like illness,cluster
+4098,From Maharashtra,cluster
+4099,From Maharashtra,cluster
+4104,From Maharashtra,cluster
+4105,From Maharashtra,cluster
+4106,From Maharashtra,cluster
+4107,From Maharashtra,cluster
+4108,From Maharashtra,cluster
+4109,From Maharashtra,cluster
+4110,From Maharashtra,cluster
+4111,From Maharashtra,cluster
+4112,From Maharashtra,cluster
+4113,From Maharashtra,cluster
+4116,From Maharashtra,cluster
+4117,From Maharashtra,cluster
+4118,From Maharashtra,cluster
+4119,From Maharashtra,cluster
+4120,From Maharashtra,cluster
+4121,From Maharashtra,cluster
+4122,From Maharashtra,cluster
+4123,From Maharashtra,cluster
+4124,From Maharashtra,cluster
+4126,From Maharashtra,cluster
+4127,From Maharashtra,cluster
+4128,From Maharashtra,cluster
+4129,From Maharashtra,cluster
+4130,From Maharashtra,cluster
+4132,From Maharashtra,cluster
+4133,From Maharashtra,cluster
+4134,From Maharashtra,cluster
+4136,From Maharashtra,cluster
+4137,From Maharashtra,cluster
+4138,From Maharashtra,cluster
+4139,From Maharashtra,cluster
+4140,From Maharashtra,cluster
+4141,From Maharashtra,cluster
+4142,From Maharashtra,cluster
+4143,From Maharashtra,cluster
+4144,From Maharashtra,cluster
+4145,From Maharashtra,cluster
+4146,From Maharashtra,cluster
+4147,From Maharashtra,cluster
+4148,From Maharashtra,cluster
+4149,From Maharashtra,cluster
+4150,From Maharashtra,cluster
+4151,From Maharashtra,cluster
+4152,From Maharashtra,cluster
+4153,From Maharashtra,cluster
+4154,From Maharashtra,cluster
+4155,From Maharashtra,cluster
+4156,From Maharashtra,cluster
+4157,From Maharashtra,cluster
+4158,From Maharashtra,cluster
+4159,From Maharashtra,cluster
+4160,From Maharashtra,cluster
+4161,From Maharashtra,cluster
+4162,From Maharashtra,cluster
+4163,From Maharashtra,cluster
+4164,From Maharashtra,cluster
+4165,From Maharashtra,cluster
+4166,From Maharashtra,cluster
+4167,From Maharashtra,cluster
+4168,From Maharashtra,cluster
+4169,From Maharashtra,cluster
+4170,From Maharashtra,cluster
+4171,From Maharashtra,cluster
+4172,From Maharashtra,cluster
+4173,From Maharashtra,cluster
+4174,From Maharashtra,cluster
+4175,From Maharashtra,cluster
+4176,From Maharashtra,cluster
+4177,From Maharashtra,cluster
+4178,From Maharashtra,cluster
+4179,From Maharashtra,cluster
+4180,From Maharashtra,cluster
+4181,From Maharashtra,cluster
+4182,From Maharashtra,cluster
+4316,Unknown,cluster
+4336,Influenza like illness,cluster
+4338,Others,cluster
+4339,Severe Acute Respiratory Infection,cluster
+4342,Unknown,cluster
+4343,Unknown,cluster
+4344,Unknown,cluster
+4347,Unknown,cluster
+4350,Others,cluster
+4506,Severe Acute Respiratory Infection,cluster
+4530,From Maharashtra,cluster
+4531,From Maharashtra,cluster
+4532,From Maharashtra,cluster
+4837,Severe Acute Respiratory Infection,cluster
+4838,Containment Zones,cluster
+4839,Containment Zones,cluster
+4840,Severe Acute Respiratory Infection,cluster
+4841,Severe Acute Respiratory Infection,cluster
+4852,From the Southern States,cluster
+4859,Severe Acute Respiratory Infection,cluster
+5015,Others,cluster
+5016,Others,cluster
+5301,Influenza like illness,cluster
+5302,Influenza like illness,cluster
+5303,Influenza like illness,cluster
+5304,Influenza like illness,cluster
+5305,Influenza like illness,cluster
+5306,Severe Acute Respiratory Infection,cluster
+5307,Severe Acute Respiratory Infection,cluster
+5308,Unknown,cluster
+5314,Containment Zones,cluster
+5315,Severe Acute Respiratory Infection,cluster
+5326,From Maharashtra,cluster
+5330,Unknown,cluster
+5336,Severe Acute Respiratory Infection,cluster
+5341,Severe Acute Respiratory Infection,cluster
+5374,Others,cluster
+5375,Others,cluster
+5376,Others,cluster
+5381,Influenza like illness,cluster
+5386,From Maharashtra,cluster
+5427,Containment Zones,cluster
+5428,Containment Zones,cluster
+5434,Unknown,cluster
+5460,Severe Acute Respiratory Infection,cluster
+5461,Severe Acute Respiratory Infection,cluster
+5462,Severe Acute Respiratory Infection,cluster
+5463,Influenza like illness,cluster
+5464,Unknown,cluster
+5465,Unknown,cluster
+5466,Unknown,cluster
+5467,Severe Acute Respiratory Infection,cluster
+5469,Severe Acute Respiratory Infection,cluster
+5470,Severe Acute Respiratory Infection,cluster
+5471,Severe Acute Respiratory Infection,cluster
+5472,Unknown,cluster
+5473,Severe Acute Respiratory Infection,cluster
+5531,Unknown,cluster
+5558,Unknown,cluster
+5559,From the Southern States,cluster
+5575,Others,cluster
+5576,Others,cluster
+5577,Others,cluster
+5578,Others,cluster
+5579,Others,cluster
+5580,Others,cluster
+5785,Influenza like illness,cluster
+5786,Influenza like illness,cluster
+5791,Unknown,cluster
+5792,Severe Acute Respiratory Infection,cluster
+5793,Severe Acute Respiratory Infection,cluster
+5794,Severe Acute Respiratory Infection,cluster
+5795,Unknown,cluster
+5796,Unknown,cluster
+5798,Severe Acute Respiratory Infection,cluster
+5799,Severe Acute Respiratory Infection,cluster
+5800,Severe Acute Respiratory Infection,cluster
+5802,Containment Zones,cluster
+5803,From Maharashtra,cluster
+5804,From Maharashtra,cluster
+5805,Severe Acute Respiratory Infection,cluster
+5807,Influenza like illness,cluster
+5809,Severe Acute Respiratory Infection,cluster
+5810,Influenza like illness,cluster
+5811,Influenza like illness,cluster
+5812,Influenza like illness,cluster
+5817,Severe Acute Respiratory Infection,cluster
+5818,Severe Acute Respiratory Infection,cluster
+5819,From Maharashtra,cluster
+5820,From Maharashtra,cluster
+5821,Containment Zones,cluster
+5822,Containment Zones,cluster
+5823,Containment Zones,cluster
+5926,Others,cluster
+5927,Others,cluster
+5928,Others,cluster
+5956,Others,cluster
+5990,Unknown,cluster
+5991,Unknown,cluster
+5998,Unknown,cluster
+6002,From Maharashtra,cluster
+6003,From Maharashtra,cluster
+6009,Severe Acute Respiratory Infection,cluster
+6016,Severe Acute Respiratory Infection,cluster
+6030,Severe Acute Respiratory Infection,cluster
+6031,Severe Acute Respiratory Infection,cluster
+6032,Severe Acute Respiratory Infection,cluster
+6033,Severe Acute Respiratory Infection,cluster
+6040,Severe Acute Respiratory Infection,cluster
+6114,Containment Zones,cluster
+6115,Containment Zones,cluster
+6116,Containment Zones,cluster
+6117,Containment Zones,cluster
+6118,From Maharashtra,cluster
+6132,Influenza like illness,cluster
+6135,From Maharashtra,cluster
+6136,From Maharashtra,cluster
+6137,Unknown,cluster
+6138,Unknown,cluster
+6139,Unknown,cluster
+6140,Influenza like illness,cluster
+6151,Severe Acute Respiratory Infection,cluster
+6152,Severe Acute Respiratory Infection,cluster
+6153,Severe Acute Respiratory Infection,cluster
+6154,Severe Acute Respiratory Infection,cluster
+6158,Severe Acute Respiratory Infection,cluster
+6196,Severe Acute Respiratory Infection,cluster
+6206,Influenza like illness,cluster
+6260,Influenza like illness,cluster
+6261,Others,cluster
+6308,Severe Acute Respiratory Infection,cluster
+6309,From Maharashtra,cluster
+6359,Unknown,cluster
+6378,Influenza like illness,cluster
+6380,Influenza like illness,cluster
+6384,Unknown,cluster
+6385,Unknown,cluster
+6391,Others,cluster
+6392,Others,cluster
+6393,Influenza like illness,cluster
+6400,From the Southern States,cluster
+6401,From the Southern States,cluster
+6402,From the Southern States,cluster
+6403,From the Southern States,cluster
+6404,From the Southern States,cluster
+6405,From the Southern States,cluster
+6406,Unknown,cluster
+6407,Unknown,cluster
+6408,Unknown,cluster
+6410,Others,cluster
+6412,Others,cluster
+6413,Others,cluster
+6416,Others,cluster
+6417,Others,cluster
+6418,Others,cluster
+6419,Others,cluster
+6420,Others,cluster
+6423,Others,cluster
+6424,Others,cluster
+6425,Others,cluster
+6426,Others,cluster
+6427,Others,cluster
+6428,Others,cluster
+6429,Others,cluster
+6430,Others,cluster
+6431,Others,cluster
+6432,Others,cluster
+6433,Others,cluster
+6434,Others,cluster
+6435,Others,cluster
+6436,Others,cluster
+6437,Others,cluster
+6444,Others,cluster
+6445,Others,cluster
+6446,Others,cluster
+6447,Others,cluster
+6448,Others,cluster
+6449,Others,cluster
+6450,Others,cluster
+6451,Others,cluster
+6452,Others,cluster
+6453,Others,cluster
+6454,Others,cluster
+6455,Others,cluster
+6456,Others,cluster
+6457,Others,cluster
+6458,Others,cluster
+6459,Others,cluster
+6460,Others,cluster
+6461,Others,cluster
+6462,Others,cluster
+6463,Others,cluster
+6464,Others,cluster
+6465,Others,cluster
+6466,Others,cluster
+6467,Others,cluster
+6468,Others,cluster
+6469,Others,cluster
+6470,Others,cluster
+6473,Others,cluster
+6474,Others,cluster
+6475,Others,cluster
+6479,Others,cluster
+6480,Others,cluster
+6481,Others,cluster
+6482,Others,cluster
+6483,Others,cluster
+6484,Others,cluster
+6485,Others,cluster
+6486,Others,cluster
+6487,Others,cluster
+6488,Others,cluster
+6489,Others,cluster
+6490,Unknown,cluster
+6491,Others,cluster
+6492,Others,cluster
+6493,Others,cluster
+6494,Others,cluster
+6495,Others,cluster
+6496,Others,cluster
+6497,Others,cluster
+6498,Others,cluster
+6499,Others,cluster
+6500,Others,cluster
+6501,Others,cluster
+6502,Others,cluster
+6503,Others,cluster
+6504,Others,cluster
+6505,Others,cluster
+6506,Others,cluster
+6507,Others,cluster
+6508,Others,cluster
+6509,Others,cluster
+6510,Others,cluster
+6511,Others,cluster
+6512,Others,cluster
+6520,Others,cluster
+6521,Unknown,cluster
+6523,Unknown,cluster
+6524,Others,cluster
+6525,Others,cluster
+6526,Others,cluster
+6527,Unknown,cluster
+6528,Unknown,cluster
+6529,Unknown,cluster
+6530,Unknown,cluster
+6531,Unknown,cluster
+6533,Influenza like illness,cluster
+6534,Influenza like illness,cluster
+6535,Influenza like illness,cluster
+6536,Influenza like illness,cluster
+6537,Influenza like illness,cluster
+6538,Influenza like illness,cluster
+6539,Influenza like illness,cluster
+6542,Severe Acute Respiratory Infection,cluster
+6543,Severe Acute Respiratory Infection,cluster
+6544,Severe Acute Respiratory Infection,cluster
+6549,Severe Acute Respiratory Infection,cluster
+6551,Influenza like illness,cluster
+6554,Influenza like illness,cluster
+6555,Influenza like illness,cluster
+6566,Influenza like illness,cluster
+6567,Influenza like illness,cluster
+6568,Influenza like illness,cluster
+6572,From the Southern States,cluster
+6573,From the Southern States,cluster
+6574,From the Southern States,cluster
+6575,From Maharashtra,cluster
+6576,From Maharashtra,cluster
+6577,Severe Acute Respiratory Infection,cluster
+6627,Severe Acute Respiratory Infection,cluster
+6628,Severe Acute Respiratory Infection,cluster
+6686,Others,cluster
+6688,Others,cluster
+6689,Others,cluster
+6690,Others,cluster
+6691,Others,cluster
+6692,Others,cluster
+6693,Others,cluster
+6694,Others,cluster
+6772,Unknown,cluster
+6810,Severe Acute Respiratory Infection,cluster
+6832,Severe Acute Respiratory Infection,cluster
+6833,Influenza like illness,cluster
+6834,Influenza like illness,cluster
+6835,Influenza like illness,cluster
+6836,Influenza like illness,cluster
+6837,Influenza like illness,cluster
+6838,Unknown,cluster
+6841,Influenza like illness,cluster
+6842,Influenza like illness,cluster
+6846,From Maharashtra,cluster
+6867,Influenza like illness,cluster
+6868,Influenza like illness,cluster
+6869,Influenza like illness,cluster
+6870,Influenza like illness,cluster
+6871,Influenza like illness,cluster
+6872,Influenza like illness,cluster
+6874,Influenza like illness,cluster
+6877,Unknown,cluster
+6880,Severe Acute Respiratory Infection,cluster
+6881,Severe Acute Respiratory Infection,cluster
+6903,From the Southern States,cluster
+6904,From the Southern States,cluster
+6905,From the Southern States,cluster
+6957,From Maharashtra,cluster
+6960,From Maharashtra,cluster
+6971,From Maharashtra,cluster
+6977,Unknown,cluster
+6978,Unknown,cluster
+6979,Unknown,cluster
+6991,Others,cluster
+6993,Others,cluster
+6994,Others,cluster
+6995,Others,cluster
+6996,Others,cluster
+6998,Others,cluster
+7001,Unknown,cluster
+7025,Unknown,cluster
+7026,Unknown,cluster
+7031,Unknown,cluster
+7034,Influenza like illness,cluster
+7035,Others,cluster
+7037,Unknown,cluster
+7038,Unknown,cluster
+7039,Unknown,cluster
+7040,Unknown,cluster
+7041,Unknown,cluster
+7042,Unknown,cluster
+7043,Unknown,cluster
+7044,Unknown,cluster
+7045,Unknown,cluster
+7046,Unknown,cluster
+7047,Unknown,cluster
+7048,Unknown,cluster
+7049,Unknown,cluster
+7050,Unknown,cluster
+7051,Unknown,cluster
+7052,Unknown,cluster
+7053,Unknown,cluster
+7054,Unknown,cluster
+7055,Unknown,cluster
+7056,Unknown,cluster
+7057,Unknown,cluster
+7058,Unknown,cluster
+7060,Unknown,cluster
+7061,Influenza like illness,cluster
+7062,Influenza like illness,cluster
+7093,Influenza like illness,cluster
+7096,Unknown,cluster
+7140,Unknown,cluster
+7141,Unknown,cluster
+7177,Influenza like illness,cluster
+7178,From Maharashtra,cluster
+7206,Severe Acute Respiratory Infection,cluster
+7211,Containment Zones,cluster
+7212,Unknown,cluster
+7213,Others,cluster
+7214,Unknown,cluster
+7225,Unknown,cluster
+7230,Severe Acute Respiratory Infection,cluster
+7231,Severe Acute Respiratory Infection,cluster
+7232,Unknown,cluster
+7233,Unknown,cluster
+7235,Others,cluster
+7236,Others,cluster
+7237,Others,cluster
+7238,Severe Acute Respiratory Infection,cluster
+7239,Severe Acute Respiratory Infection,cluster
+7241,Unknown,cluster
+7242,Unknown,cluster
+7263,Influenza like illness,cluster
+7264,Unknown,cluster
+7270,Severe Acute Respiratory Infection,cluster
+7271,Severe Acute Respiratory Infection,cluster
+7272,From the Southern States,cluster
+7282,Others,cluster
+7283,Others,cluster
+7284,Others,cluster
+7372,From Maharashtra,cluster
+7378,Influenza like illness,cluster
+7379,Influenza like illness,cluster
+7380,Influenza like illness,cluster
+7381,Influenza like illness,cluster
+7382,Influenza like illness,cluster
+7384,Influenza like illness,cluster
+7398,Others,cluster
+7400,Others,cluster
+7405,Unknown,cluster
+7415,Unknown,cluster
+7416,Unknown,cluster
+7418,Unknown,cluster
+7419,Unknown,cluster
+7422,Others,cluster
+7423,Others,cluster
+7425,Others,cluster
+7426,Others,cluster
+7427,Others,cluster
+7429,From Maharashtra,cluster
+7430,Others,cluster
+7431,Others,cluster
+7432,Others,cluster
+7433,Others,cluster
+7434,Others,cluster
+7435,Others,cluster
+7438,Others,cluster
+7439,Influenza like illness,cluster
+7441,Influenza like illness,cluster
+7442,Influenza like illness,cluster
+7443,Influenza like illness,cluster
+7444,Influenza like illness,cluster
+7446,Influenza like illness,cluster
+7448,Influenza like illness,cluster
+7453,Unknown,cluster
+7507,Unknown,cluster
+7510,From Maharashtra,cluster
+7516,Unknown,cluster
+7523,Severe Acute Respiratory Infection,cluster
+7538,Unknown,cluster
+7539,Influenza like illness,cluster
+7540,Influenza like illness,cluster
+7541,Influenza like illness,cluster
+7542,Influenza like illness,cluster
+7543,Influenza like illness,cluster
+7544,Influenza like illness,cluster
+7545,Influenza like illness,cluster
+7556,Severe Acute Respiratory Infection,cluster
+7557,Severe Acute Respiratory Infection,cluster
+7558,Severe Acute Respiratory Infection,cluster
+7559,From Maharashtra,cluster
+7561,From Middle East,cluster
+7567,Unknown,cluster
+7571,Severe Acute Respiratory Infection,cluster
+7572,Severe Acute Respiratory Infection,cluster
+7575,From Maharashtra,cluster
+7584,Influenza like illness,cluster
+7585,Influenza like illness,cluster
+7591,From the Southern States,cluster
+7592,Influenza like illness,cluster
+7593,Influenza like illness,cluster
+7594,Severe Acute Respiratory Infection,cluster
+7595,Severe Acute Respiratory Infection,cluster
+7598,Influenza like illness,cluster
+7599,Influenza like illness,cluster
+7600,Influenza like illness,cluster
+7601,Influenza like illness,cluster
+7602,Influenza like illness,cluster
+7603,Influenza like illness,cluster
+7606,Unknown,cluster
+7619,Influenza like illness,cluster
+7622,From Maharashtra,cluster
+7627,Influenza like illness,cluster
+7705,Others,cluster
+7706,Others,cluster
+7727,Others,cluster
+7728,Others,cluster
+7729,Others,cluster
+7730,Others,cluster
+7731,Others,cluster
+7752,From Maharashtra,cluster
+7753,From Maharashtra,cluster
+7769,From Maharashtra,cluster
+7771,From Maharashtra,cluster
+7778,Severe Acute Respiratory Infection,cluster
+7779,From Rajasthan,cluster
+7782,Influenza like illness,cluster
+7783,Influenza like illness,cluster
+7784,Influenza like illness,cluster
+7785,Unknown,cluster
+7786,Unknown,cluster
+7787,Unknown,cluster
+7788,Unknown,cluster
+7789,Unknown,cluster
+7790,Unknown,cluster
+7791,Unknown,cluster
+7793,Unknown,cluster
+7794,Influenza like illness,cluster
+7795,Influenza like illness,cluster
+7796,Influenza like illness,cluster
+7797,Influenza like illness,cluster
+7798,Influenza like illness,cluster
+7799,Influenza like illness,cluster
+7800,Influenza like illness,cluster
+7802,Others,cluster
+7811,Influenza like illness,cluster
+7812,Influenza like illness,cluster
+7813,Influenza like illness,cluster
+7828,From Maharashtra,cluster
+7832,Influenza like illness,cluster
+7833,Influenza like illness,cluster
+7834,Influenza like illness,cluster
+7837,Others,cluster
+7838,Others,cluster
+7839,Others,cluster
+7840,Others,cluster
+7841,Others,cluster
+7842,Others,cluster
+7843,Others,cluster
+7844,Others,cluster
+7845,Others,cluster
+7846,Others,cluster
+7847,Others,cluster
+7848,Others,cluster
+7851,Others,cluster
+7852,Others,cluster
+7853,Others,cluster
+7854,Others,cluster
+7855,Others,cluster
+7856,Others,cluster
+7858,Others,cluster
+7859,Others,cluster
+7865,Others,cluster
+7866,Others,cluster
+7867,Others,cluster
+7868,Others,cluster
+7869,Others,cluster
+7870,Others,cluster
+7871,Others,cluster
+7872,Others,cluster
+7873,Others,cluster
+7874,Others,cluster
+7875,Influenza like illness,cluster
+7877,Others,cluster
+7878,Others,cluster
+7879,Influenza like illness,cluster
+7881,Others,cluster
+7882,Others,cluster
+7884,Others,cluster
+7926,From Maharashtra,cluster
+7927,From Maharashtra,cluster
+7928,From Maharashtra,cluster
+7929,From Maharashtra,cluster
+7930,From Maharashtra,cluster
+7936,Severe Acute Respiratory Infection,cluster
+7948,Unknown,cluster
+7957,Unknown,cluster
+7958,From Maharashtra,cluster
+7967,Others,cluster
+7969,Others,cluster
+7970,From the Southern States,cluster
+7971,Others,cluster
+7973,Others,cluster
+7974,Others,cluster
+7975,Others,cluster
+7980,Influenza like illness,cluster
+7984,Others,cluster
+7991,Others,cluster
+7994,Influenza like illness,cluster
+7996,Others,cluster
+8013,From the Southern States,cluster
+8014,From the Southern States,cluster
+8015,From the Southern States,cluster
+8016,From the Southern States,cluster
+8017,Others,cluster
+8018,From the Southern States,cluster
+8021,From Maharashtra,cluster
+8022,From Maharashtra,cluster
+8025,From Maharashtra,cluster
+8026,From Maharashtra,cluster
+8031,From Maharashtra,cluster
+8059,Influenza like illness,cluster
+8062,Influenza like illness,cluster
+8070,Severe Acute Respiratory Infection,cluster
+8071,Severe Acute Respiratory Infection,cluster
+8072,Severe Acute Respiratory Infection,cluster
+8073,Severe Acute Respiratory Infection,cluster
+8074,Influenza like illness,cluster
+8075,Severe Acute Respiratory Infection,cluster
+8078,Influenza like illness,cluster
+8079,Influenza like illness,cluster
+8086,Unknown,cluster
+8087,Severe Acute Respiratory Infection,cluster
+8088,Severe Acute Respiratory Infection,cluster
+8097,Containment Zones,cluster
+8106,Influenza like illness,cluster
+8111,Severe Acute Respiratory Infection,cluster
+8112,Severe Acute Respiratory Infection,cluster
+8113,Influenza like illness,cluster
+8114,Influenza like illness,cluster
+8115,Severe Acute Respiratory Infection,cluster
+8126,Severe Acute Respiratory Infection,cluster
+8127,Severe Acute Respiratory Infection,cluster
+8128,Severe Acute Respiratory Infection,cluster
+8129,Severe Acute Respiratory Infection,cluster
+8130,Severe Acute Respiratory Infection,cluster
+8131,Severe Acute Respiratory Infection,cluster
+8132,Severe Acute Respiratory Infection,cluster
+8133,Severe Acute Respiratory Infection,cluster
+8134,Severe Acute Respiratory Infection,cluster
+8135,Severe Acute Respiratory Infection,cluster
+8165,Influenza like illness,cluster
+8170,Influenza like illness,cluster
+8171,From Maharashtra,cluster
+8172,From Maharashtra,cluster
+8173,From Maharashtra,cluster
+8174,From Maharashtra,cluster
+8175,From Maharashtra,cluster
+8176,From Maharashtra,cluster
+8181,Influenza like illness,cluster
+8189,Severe Acute Respiratory Infection,cluster
+8232,From Maharashtra,cluster
+8273,Severe Acute Respiratory Infection,cluster
+8289,Unknown,cluster
+8290,Unknown,cluster
+8291,Severe Acute Respiratory Infection,cluster
+8292,Severe Acute Respiratory Infection,cluster
+8293,Severe Acute Respiratory Infection,cluster
+8294,Severe Acute Respiratory Infection,cluster
+8295,Severe Acute Respiratory Infection,cluster
+8296,Severe Acute Respiratory Infection,cluster
+8297,Influenza like illness,cluster
+8298,Influenza like illness,cluster
+8318,Influenza like illness,cluster
+8330,Unknown,cluster
+8357,Influenza like illness,cluster
+8358,Influenza like illness,cluster
+8359,Others,cluster
+8360,Unknown,cluster
+8361,Influenza like illness,cluster
+8362,Unknown,cluster
+8363,Influenza like illness,cluster
+8364,Unknown,cluster
+8367,Influenza like illness,cluster
+8368,Unknown,cluster
+8371,Unknown,cluster
+8376,Influenza like illness,cluster
+8377,Influenza like illness,cluster
+8378,Influenza like illness,cluster
+8379,Influenza like illness,cluster
+8380,Others,cluster
+8385,Influenza like illness,cluster
+8394,Unknown,cluster
+8398,Unknown,cluster
+8399,Unknown,cluster
+8400,Unknown,cluster
+8401,Unknown,cluster
+8402,Unknown,cluster
+8403,Unknown,cluster
+8404,Unknown,cluster
+8405,Unknown,cluster
+8406,Unknown,cluster
+8407,Unknown,cluster
+8408,Unknown,cluster
+8409,Unknown,cluster
+8410,Unknown,cluster
+8411,Unknown,cluster
+8412,Unknown,cluster
+8413,Unknown,cluster
+8414,Severe Acute Respiratory Infection,cluster
+8415,Severe Acute Respiratory Infection,cluster
+8416,Severe Acute Respiratory Infection,cluster
+8417,Severe Acute Respiratory Infection,cluster
+8418,Severe Acute Respiratory Infection,cluster
+8430,Containment Zones,cluster
+8444,Severe Acute Respiratory Infection,cluster
+8450,Severe Acute Respiratory Infection,cluster
+8451,From Maharashtra,cluster
+8452,From Maharashtra,cluster
+8453,From Maharashtra,cluster
+8454,From Maharashtra,cluster
+8490,Severe Acute Respiratory Infection,cluster
+8491,Severe Acute Respiratory Infection,cluster
+8496,Unknown,cluster
+8497,Unknown,cluster
+8498,Unknown,cluster
+8514,Severe Acute Respiratory Infection,cluster
+8516,Severe Acute Respiratory Infection,cluster
+8517,Severe Acute Respiratory Infection,cluster
+8518,Severe Acute Respiratory Infection,cluster
+8519,Severe Acute Respiratory Infection,cluster
+8520,Severe Acute Respiratory Infection,cluster
+8521,Severe Acute Respiratory Infection,cluster
+8522,Severe Acute Respiratory Infection,cluster
+8523,Severe Acute Respiratory Infection,cluster
+8524,Severe Acute Respiratory Infection,cluster
+8525,Severe Acute Respiratory Infection,cluster
+8526,Severe Acute Respiratory Infection,cluster
+8527,Severe Acute Respiratory Infection,cluster
+8528,Severe Acute Respiratory Infection,cluster
+8529,Severe Acute Respiratory Infection,cluster
+8530,Severe Acute Respiratory Infection,cluster
+8531,Severe Acute Respiratory Infection,cluster
+8532,Severe Acute Respiratory Infection,cluster
+8533,Severe Acute Respiratory Infection,cluster
+8534,Severe Acute Respiratory Infection,cluster
+8535,Severe Acute Respiratory Infection,cluster
+8536,Severe Acute Respiratory Infection,cluster
+8537,Severe Acute Respiratory Infection,cluster
+8538,Severe Acute Respiratory Infection,cluster
+8539,Influenza like illness,cluster
+8540,Influenza like illness,cluster
+8541,Influenza like illness,cluster
+8542,Influenza like illness,cluster
+8543,Influenza like illness,cluster
+8544,Unknown,cluster
+8545,Unknown,cluster
+8547,Unknown,cluster
+8551,Influenza like illness,cluster
+8556,Influenza like illness,cluster
+8557,Influenza like illness,cluster
+8559,Influenza like illness,cluster
+8560,Influenza like illness,cluster
+8580,From the Southern States,cluster
+8581,From the Southern States,cluster
+8582,From the Southern States,cluster
+8583,From the Southern States,cluster
+8584,Influenza like illness,cluster
+8585,Influenza like illness,cluster
+8588,Severe Acute Respiratory Infection,cluster
+8608,Unknown,cluster
+8609,Unknown,cluster
+8610,Unknown,cluster
+8611,Unknown,cluster
+8612,Unknown,cluster
+8616,Severe Acute Respiratory Infection,cluster
+8617,Severe Acute Respiratory Infection,cluster
+8618,Severe Acute Respiratory Infection,cluster
+8619,Influenza like illness,cluster
+8620,Unknown,cluster
+8641,Unknown,cluster
+8642,Severe Acute Respiratory Infection,cluster
+8643,Severe Acute Respiratory Infection,cluster
+8644,Severe Acute Respiratory Infection,cluster
+8645,Severe Acute Respiratory Infection,cluster
+8646,Severe Acute Respiratory Infection,cluster
+8647,Severe Acute Respiratory Infection,cluster
+8665,Unknown,cluster
+8666,Unknown,cluster
+8667,Unknown,cluster
+8668,Unknown,cluster
+8692,Influenza like illness,cluster
+8701,Influenza like illness,cluster
+8702,Influenza like illness,cluster
+8703,Influenza like illness,cluster
+8704,Influenza like illness,cluster
+8705,Influenza like illness,cluster
+8706,Influenza like illness,cluster
+8707,Influenza like illness,cluster
+8708,Influenza like illness,cluster
+8711,Influenza like illness,cluster
+8712,Influenza like illness,cluster
+8713,Influenza like illness,cluster
+8727,Influenza like illness,cluster
+8728,Influenza like illness,cluster
+8729,Influenza like illness,cluster
+8730,Influenza like illness,cluster
+8731,Influenza like illness,cluster
+8732,Influenza like illness,cluster
+8733,From Maharashtra,cluster
+8734,From Maharashtra,cluster
+8735,From Maharashtra,cluster
+8736,From Maharashtra,cluster
+8737,From Maharashtra,cluster
+8738,From Maharashtra,cluster
+8739,From Maharashtra,cluster
+8740,From Maharashtra,cluster
+8741,Unknown,cluster
+8742,Influenza like illness,cluster
+8745,Influenza like illness,cluster
+8746,Influenza like illness,cluster
+8747,Influenza like illness,cluster
+8748,Influenza like illness,cluster
+8749,From the Southern States,cluster
+8750,From the Southern States,cluster
+8751,Influenza like illness,cluster
+8752,Influenza like illness,cluster
+8753,Severe Acute Respiratory Infection,cluster
+8795,Influenza like illness,cluster
+8799,Severe Acute Respiratory Infection,cluster
+8801,Severe Acute Respiratory Infection,cluster
+8802,Severe Acute Respiratory Infection,cluster
+8803,Severe Acute Respiratory Infection,cluster
+8804,Severe Acute Respiratory Infection,cluster
+8805,Severe Acute Respiratory Infection,cluster
+8806,Severe Acute Respiratory Infection,cluster
+8814,Influenza like illness,cluster
+8815,Severe Acute Respiratory Infection,cluster
+8822,From the Southern States,cluster
+8824,From the Southern States,cluster
+8826,Unknown,cluster
+8827,Unknown,cluster
+8828,Unknown,cluster
+8829,Others,cluster
+8834,Influenza like illness,cluster
+8842,Influenza like illness,cluster
+8843,Influenza like illness,cluster
+8844,Influenza like illness,cluster
+8845,Unknown,cluster
+8846,Unknown,cluster
+8847,Unknown,cluster
+8848,Unknown,cluster
+8863,Influenza like illness,cluster
+8871,Influenza like illness,cluster
+8911,From Maharashtra,cluster
+8921,From Maharashtra,cluster
+8922,From Maharashtra,cluster
+8923,From Maharashtra,cluster
+8930,From Maharashtra,cluster
+8931,From Maharashtra,cluster
+8932,From Maharashtra,cluster
+8933,From Maharashtra,cluster
+9027,From Maharashtra,cluster
+9028,From Maharashtra,cluster
+9047,Severe Acute Respiratory Infection,cluster
+9055,Unknown,cluster
+9056,Unknown,cluster
+9058,Unknown,cluster
+9063,Unknown,cluster
+9073,Unknown,cluster
+9074,Influenza like illness,cluster
+9075,Unknown,cluster
+9076,Influenza like illness,cluster
+9077,Others,cluster
+9078,Others,cluster
+9079,Unknown,cluster
+9080,Unknown,cluster
+9083,Influenza like illness,cluster
+9084,Unknown,cluster
+9085,From Maharashtra,cluster
+9086,From Maharashtra,cluster
+9087,From Maharashtra,cluster
+9088,From Maharashtra,cluster
+9089,Unknown,cluster
+9090,Unknown,cluster
+9091,Unknown,cluster
+9092,From Maharashtra,cluster
+9093,Others,cluster
+9094,Others,cluster
+9096,Influenza like illness,cluster
+9097,Influenza like illness,cluster
+9099,Influenza like illness,cluster
+9102,Influenza like illness,cluster
+9104,Others,cluster
+9112,Unknown,cluster
+9129,From Maharashtra,cluster
+9134,Influenza like illness,cluster
+9135,Others,cluster
+9143,Unknown,cluster
+9147,Unknown,cluster
+9148,Unknown,cluster
+9153,Influenza like illness,cluster
+9154,Influenza like illness,cluster
+9155,Influenza like illness,cluster
+9158,Unknown,cluster
+9159,Unknown,cluster
+9160,Unknown,cluster
+9170,Severe Acute Respiratory Infection,cluster
+9171,Severe Acute Respiratory Infection,cluster
+9172,Severe Acute Respiratory Infection,cluster
+9173,Severe Acute Respiratory Infection,cluster
+9175,Severe Acute Respiratory Infection,cluster
+9176,Severe Acute Respiratory Infection,cluster
+9180,Containment Zones,cluster
+9193,From Maharashtra,cluster
+9194,From Maharashtra,cluster
+9195,From Maharashtra,cluster
+9196,From Maharashtra,cluster
+9197,Unknown,cluster
+9198,Unknown,cluster
+9199,Unknown,cluster
+9200,Unknown,cluster
+9216,Unknown,cluster
+9217,Unknown,cluster
+9218,Unknown,cluster
+9219,Unknown,cluster
+9220,Unknown,cluster
+9221,Unknown,cluster
+9222,Unknown,cluster
+9223,Unknown,cluster
+9224,Unknown,cluster
+9233,Others,cluster
+9235,Influenza like illness,cluster
+9236,Influenza like illness,cluster
+9237,Influenza like illness,cluster
+9239,Influenza like illness,cluster
+9240,Influenza like illness,cluster
+9242,Influenza like illness,cluster
+9243,Unknown,cluster
+9244,Unknown,cluster
+9245,Unknown,cluster
+9246,From the Southern States,cluster
+9251,Influenza like illness,cluster
+9252,Influenza like illness,cluster
+9286,Unknown,cluster
+9292,Unknown,cluster
+9293,Unknown,cluster
+9294,Unknown,cluster
+9300,Influenza like illness,cluster
+9302,From Maharashtra,cluster
+9303,From Maharashtra,cluster
+9307,Influenza like illness,cluster
+9308,Influenza like illness,cluster
+9309,Influenza like illness,cluster
+9310,Severe Acute Respiratory Infection,cluster
+9311,Severe Acute Respiratory Infection,cluster
+9312,Severe Acute Respiratory Infection,cluster
+9313,Severe Acute Respiratory Infection,cluster
+9315,Influenza like illness,cluster
+9318,Severe Acute Respiratory Infection,cluster
+9319,Influenza like illness,cluster
+9322,Severe Acute Respiratory Infection,cluster
+9366,Severe Acute Respiratory Infection,cluster
+9371,From Maharashtra,cluster
+9383,From Maharashtra,cluster
+9384,From Maharashtra,cluster
+9401,From the Southern States,cluster
+9403,Unknown,cluster
+9404,Unknown,cluster
+9405,Influenza like illness,cluster
+9406,Influenza like illness,cluster
+9408,Others,cluster
+9409,Others,cluster
+9412,Severe Acute Respiratory Infection,cluster
+9419,Unknown,cluster
+9427,Unknown,cluster
+9428,Unknown,cluster
+9437,Unknown,cluster
+9438,Unknown,cluster
+9439,Unknown,cluster
+9510,Others,cluster
+9511,Others,cluster
+9512,Others,cluster
+9513,Influenza like illness,cluster
+9514,Influenza like illness,cluster
+9515,Influenza like illness,cluster
+9516,Influenza like illness,cluster
+9517,Influenza like illness,cluster
+9519,Unknown,cluster
+9520,Influenza like illness,cluster
+9521,Influenza like illness,cluster
+9522,Influenza like illness,cluster
+9540,Others,cluster
+9541,Others,cluster
+9542,Others,cluster
+9547,From Maharashtra,cluster
+9548,Others,cluster
+9550,Influenza like illness,cluster
+9564,Others,cluster
+9565,Others,cluster
+9566,Others,cluster
+9573,From the Southern States,cluster
+9584,Influenza like illness,cluster
+9585,Influenza like illness,cluster
+9586,Influenza like illness,cluster
+9587,Influenza like illness,cluster
+9595,From Maharashtra,cluster
+9611,From the Southern States,cluster
+9612,From the Southern States,cluster
+9613,From the Southern States,cluster
+9614,From the Southern States,cluster
+9615,From the Southern States,cluster
+9616,From the Southern States,cluster
+9618,Unknown,cluster
+9634,From Maharashtra,cluster
+9649,Influenza like illness,cluster
+9650,Influenza like illness,cluster
+9653,Others,cluster
+9654,Others,cluster
+9655,Others,cluster
+9656,Others,cluster
+9657,Others,cluster
+9658,Unknown,cluster
+9660,Influenza like illness,cluster
+9661,Influenza like illness,cluster
+9662,Others,cluster
+9663,Influenza like illness,cluster
+9668,Influenza like illness,cluster
+9669,Others,cluster
+9670,Others,cluster
+9671,Influenza like illness,cluster
+9672,Others,cluster
+9674,Influenza like illness,cluster
+9675,Influenza like illness,cluster
+9676,From Maharashtra,cluster
+9680,Influenza like illness,cluster
+9681,Influenza like illness,cluster
+9682,Influenza like illness,cluster
+9683,Influenza like illness,cluster
+9684,Influenza like illness,cluster
+9685,Influenza like illness,cluster
+9686,Others,cluster
+9687,Influenza like illness,cluster
+9688,Influenza like illness,cluster
+9689,Influenza like illness,cluster
+9690,Others,cluster
+9693,Unknown,cluster
+9694,Unknown,cluster
+9695,Unknown,cluster
+9697,Others,cluster
+9698,Others,cluster
+9699,Unknown,cluster
+9701,Influenza like illness,cluster
+9706,Influenza like illness,cluster
+9707,Influenza like illness,cluster
+9708,Influenza like illness,cluster
+9717,Severe Acute Respiratory Infection,cluster
+9718,Severe Acute Respiratory Infection,cluster
+9719,Severe Acute Respiratory Infection,cluster
+9720,Severe Acute Respiratory Infection,cluster
+9726,Unknown,cluster
+9727,Unknown,cluster
+9728,Unknown,cluster
+9748,Others,cluster
+9749,Others,cluster
+9755,From the Southern States,cluster
+9760,From Maharashtra,cluster
+9771,From Maharashtra,cluster
+9772,From Maharashtra,cluster
+9778,From Maharashtra,cluster
+9783,Influenza like illness,cluster
+9784,Influenza like illness,cluster
+9785,Influenza like illness,cluster
+9786,Unknown,cluster
+9787,Unknown,cluster
+9788,Unknown,cluster
+9789,Unknown,cluster
+9790,Unknown,cluster
+9791,Influenza like illness,cluster
+9854,From the Southern States,cluster
+9855,Others,cluster
+9861,Influenza like illness,cluster
+9862,Influenza like illness,cluster
+9863,Influenza like illness,cluster
+9864,From Maharashtra,cluster
+9865,From Maharashtra,cluster
+9866,Influenza like illness,cluster
+9867,Others,cluster
+9868,Unknown,cluster
+9869,Influenza like illness,cluster
+9870,Influenza like illness,cluster
+9871,Others,cluster
+9872,Others,cluster
+9873,Others,cluster
+9877,From Maharashtra,cluster
+9881,Others,cluster
+9884,Others,cluster
+9885,From Maharashtra,cluster
+9889,Severe Acute Respiratory Infection,cluster
+9890,Unknown,cluster
+9891,Severe Acute Respiratory Infection,cluster
+9895,Severe Acute Respiratory Infection,cluster
+9896,Severe Acute Respiratory Infection,cluster
+9901,Unknown,cluster
+9902,Unknown,cluster
+9903,Unknown,cluster
+9904,Unknown,cluster
+9905,Unknown,cluster
+9922,Severe Acute Respiratory Infection,cluster
+9924,Influenza like illness,cluster
+9926,Influenza like illness,cluster
+9927,Influenza like illness,cluster
+9928,Influenza like illness,cluster
+9929,Influenza like illness,cluster
+9930,Influenza like illness,cluster
+9931,Influenza like illness,cluster
+9932,Influenza like illness,cluster
+9933,Influenza like illness,cluster
+9934,Influenza like illness,cluster
+9935,Influenza like illness,cluster
+9936,Unknown,cluster
+9937,Unknown,cluster
+9949,Severe Acute Respiratory Infection,cluster
+9951,Unknown,cluster
+9954,Unknown,cluster
+9955,Unknown,cluster
+9956,Unknown,cluster
+9985,Influenza like illness,cluster
+10034,Unknown,cluster
+10072,Others,cluster
+10073,Others,cluster
+10075,Influenza like illness,cluster
+10082,Influenza like illness,cluster
+10098,Influenza like illness,cluster
+10099,Influenza like illness,cluster
+10102,Unknown,cluster
+10103,Unknown,cluster
+10104,Unknown,cluster
+10105,Unknown,cluster
+10106,Unknown,cluster
+10107,Unknown,cluster
+10110,Influenza like illness,cluster
+10111,Containment Zones,cluster
+10112,Containment Zones,cluster
+10113,Containment Zones,cluster
+10114,Severe Acute Respiratory Infection,cluster
+10121,From Maharashtra,cluster
+10122,From Maharashtra,cluster
+10123,From Maharashtra,cluster
+10125,Others,cluster
+10126,Others,cluster
+10147,Others,cluster
+10148,Others,cluster
+10149,Others,cluster
+10150,Others,cluster
+10151,Others,cluster
+10152,Others,cluster
+10154,Others,cluster
+10155,Others,cluster
+10156,Influenza like illness,cluster
+10157,Influenza like illness,cluster
+10158,Influenza like illness,cluster
+10159,Influenza like illness,cluster
+10160,Influenza like illness,cluster
+10163,From Maharashtra,cluster
+10164,From Maharashtra,cluster
+10165,From Maharashtra,cluster
+10166,From Maharashtra,cluster
+10167,From Maharashtra,cluster
+10177,From Maharashtra,cluster
+10185,From the Southern States,cluster
+10205,Containment Zones,cluster
+10207,Unknown,cluster
+10210,Influenza like illness,cluster
+10211,Unknown,cluster
+10213,Others,cluster
+10214,Others,cluster
+10215,Influenza like illness,cluster
+10216,Influenza like illness,cluster
+10217,Influenza like illness,cluster
+10219,Influenza like illness,cluster
+10220,Influenza like illness,cluster
+10221,Others,cluster
+10222,Others,cluster
+10223,Others,cluster
+10224,Others,cluster
+10225,Others,cluster
+10226,Others,cluster
+10227,Others,cluster
+10228,Others,cluster
+10248,From Maharashtra,cluster
+10264,Severe Acute Respiratory Infection,cluster
+10265,Severe Acute Respiratory Infection,cluster
+10269,Unknown,cluster
+10271,Severe Acute Respiratory Infection,cluster
+10272,Severe Acute Respiratory Infection,cluster
+10273,Severe Acute Respiratory Infection,cluster
+10295,Influenza like illness,cluster
+10296,Influenza like illness,cluster
+10297,Influenza like illness,cluster
+10301,Unknown,cluster
+10302,Unknown,cluster
+10303,Unknown,cluster
+10304,Unknown,cluster
+10305,Unknown,cluster
+10307,Unknown,cluster
+10312,,cluster
+10319,Severe Acute Respiratory Infection,cluster
+10326,Unknown,cluster
+10327,Unknown,cluster
+10328,Unknown,cluster
+10329,Unknown,cluster
+10331,Unknown,cluster
+10332,Unknown,cluster
+10334,Unknown,cluster
+10337,From the Southern States,cluster
+10339,From the Southern States,cluster
+10351,Others,cluster
+10352,Others,cluster
+10353,Others,cluster
+10354,Others,cluster
+10355,Others,cluster
+10389,Severe Acute Respiratory Infection,cluster
+10390,Severe Acute Respiratory Infection,cluster
+10393,Unknown,cluster
+10399,Severe Acute Respiratory Infection,cluster
+10400,Severe Acute Respiratory Infection,cluster
+10404,Severe Acute Respiratory Infection,cluster
+10411,Severe Acute Respiratory Infection,cluster
+10412,Severe Acute Respiratory Infection,cluster
+10414,Severe Acute Respiratory Infection,cluster
+10415,Severe Acute Respiratory Infection,cluster
+10416,Severe Acute Respiratory Infection,cluster
+10417,Severe Acute Respiratory Infection,cluster
+10418,Severe Acute Respiratory Infection,cluster
+10419,Severe Acute Respiratory Infection,cluster
+10421,Influenza like illness,cluster
+10422,Influenza like illness,cluster
+10423,Influenza like illness,cluster
+10424,Influenza like illness,cluster
+10425,Influenza like illness,cluster
+10426,Influenza like illness,cluster
+10427,Unknown,cluster
+10428,Unknown,cluster
+10429,Severe Acute Respiratory Infection,cluster
+10432,Influenza like illness,cluster
+10433,Severe Acute Respiratory Infection,cluster
+10434,Severe Acute Respiratory Infection,cluster
+10435,Severe Acute Respiratory Infection,cluster
+10436,Unknown,cluster
+10437,Unknown,cluster
+10439,Influenza like illness,cluster
+10440,Severe Acute Respiratory Infection,cluster
+10442,Unknown,cluster
+10443,Unknown,cluster
+10519,Influenza like illness,cluster
+10520,Influenza like illness,cluster
+10521,Influenza like illness,cluster
+10522,Influenza like illness,cluster
+10523,Influenza like illness,cluster
+10533,Severe Acute Respiratory Infection,cluster
+10543,Influenza like illness,cluster
+10555,Influenza like illness,cluster
+10559,Influenza like illness,cluster
+10560,Influenza like illness,cluster
+10580,Influenza like illness,cluster
+10581,Influenza like illness,cluster
+10584,Influenza like illness,cluster
+10585,Influenza like illness,cluster
+10592,Severe Acute Respiratory Infection,cluster
+10593,Influenza like illness,cluster
+10594,Influenza like illness,cluster
+10595,Influenza like illness,cluster
+10596,Influenza like illness,cluster
+10597,Influenza like illness,cluster
+10600,Influenza like illness,cluster
+10601,Influenza like illness,cluster
+10602,From Maharashtra,cluster
+10603,Influenza like illness,cluster
+10605,Influenza like illness,cluster
+10606,Influenza like illness,cluster
+10607,Influenza like illness,cluster
+10608,Influenza like illness,cluster
+10609,Influenza like illness,cluster
+10610,Others,cluster
+10614,Influenza like illness,cluster
+10630,From the Southern States,cluster
+10633,Unknown,cluster
+10634,Unknown,cluster
+10635,From the Southern States,cluster
+10636,From the Southern States,cluster
+10637,From the Southern States,cluster
+10639,Influenza like illness,cluster
+10640,Influenza like illness,cluster
+10641,Influenza like illness,cluster
+10649,Others,cluster
+10650,Others,cluster
+10657,Unknown,cluster
+10658,Unknown,cluster
+10659,Unknown,cluster
+10660,Unknown,cluster
+10666,Severe Acute Respiratory Infection,cluster
+10680,Influenza like illness,cluster
+10681,Influenza like illness,cluster
+10683,Influenza like illness,cluster
+10731,Influenza like illness,cluster
+10732,Influenza like illness,cluster
+10735,Unknown,cluster
+10736,Unknown,cluster
+10737,Others,cluster
+10738,Others,cluster
+10739,Unknown,cluster
+10740,Unknown,cluster
+10741,Unknown,cluster
+10742,Unknown,cluster
+10743,Unknown,cluster
+10744,Unknown,cluster
+10745,Unknown,cluster
+10746,Unknown,cluster
+10747,Others,cluster
+10750,Unknown,cluster
+10765,Others,cluster
+10767,Influenza like illness,cluster
+10768,Others,cluster
+10771,Influenza like illness,cluster
+10772,Unknown,cluster
+10773,Unknown,cluster
+10774,From Maharashtra,cluster
+10775,Influenza like illness,cluster
+10776,Influenza like illness,cluster
+10799,Others,cluster
+10803,Containment Zones,cluster
+10812,Containment Zones,cluster
+10816,Influenza like illness,cluster
+10824,Influenza like illness,cluster
+10829,Severe Acute Respiratory Infection,cluster
+10831,Severe Acute Respiratory Infection,cluster
+10832,Severe Acute Respiratory Infection,cluster
+10837,Others,cluster
+10842,Influenza like illness,cluster
+10843,Influenza like illness,cluster
+10844,Influenza like illness,cluster
+10845,Influenza like illness,cluster
+10846,Influenza like illness,cluster
+10848,Others,cluster
+10849,Others,cluster
+10852,Severe Acute Respiratory Infection,cluster
+10853,Severe Acute Respiratory Infection,cluster
+10854,Severe Acute Respiratory Infection,cluster
+10855,Severe Acute Respiratory Infection,cluster
+10856,Severe Acute Respiratory Infection,cluster
+10863,Influenza like illness,cluster
+10986,Severe Acute Respiratory Infection,cluster
+10992,Influenza like illness,cluster
+10993,Influenza like illness,cluster
+10997,Influenza like illness,cluster
+10998,Influenza like illness,cluster
+10999,Influenza like illness,cluster

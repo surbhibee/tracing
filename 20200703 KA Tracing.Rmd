@@ -1,0 +1,92 @@
+---
+title: "20200703 KA Tracing"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list = ls())
+library(readxl)
+library(tidyverse)
+library(ggraph)
+library(igraph)
+library(ggrepel)
+setwd("~/Documents/GitHub/tracing")
+```
+
+#Import data
+```{r}
+dat <- read_csv("KAtrace.csv",  skip = 19)
+dat$Date <- as.Date(dat$Date, "%d-%b")
+```
+
+# Data processing
+
+## Classifying biggest clusters
+```{r}
+dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n())
+dat$origin_cluster <- ifelse(dat$n_cluster < 200, "Others", as.character(dat$Cluster))
+```
+
+# Visualizations
+
+## Stacked histogram, date, number and breakdown of cluster
+```{r}
+dat %>% ggplot(aes(Date)) + geom_bar(aes(fill=origin_cluster), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases")
+```  
+
+## Distibution of number of people infected by one person
+
+### Data wrangle
+```{r}
+secondary <- dat %>% group_by(P) %>% summarize(`Secondary infections` = n()) 
+write_csv(secondary, "secondary_infections.csv")
+```
+### Viz
+```{r}
+secondary %>% filter(`Secondary infections` < 100) %>% summarize(avg = mean(`Secondary infections`))
+secondary %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = 3.075967, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Secondary infections caused by each patient") + ylab("Number of COVID-19 patients") + ggtitle("Distribution of number of secondary infections caused")
+ggsave("secondary_hist.png")
+```
+
+
+
+# Network map
+
+## Creating an edge list for Gephi
+
+## Edge list for viz in R
+```{r}
+names(edges) <- c("Source", "Target")
+write_csv(edges, "edge_gephi.csv")
+
+nodes <- dat %>% ungroup() %>% select(Case, Cluster) 
+names(nodes) <- c("Id", "Label")
+nodes$`node-type` <- dat$Cluster
+write_csv(nodes, "nodes_gephi.csv")
+```
+
+```{r}
+edges <- dat %>% ungroup() %>% select(P, Case) 
+edges$P <- ifelse(edges$P == 0, -as.numeric(dat$Cluster), edges$P)
+names(edges) <- c("From", "To")
+write_csv(edges, "edge_viz.csv")
+```
+
+## Edge list diagrams
+```{r}
+mygraph <- graph_from_edgelist(as.matrix(edges))
+
+# With igraph
+plot(mygraph, vertex.label="", edge.arrow.size=0, vertex.size=2)
+ 
+# With ggraph:
+ggraph(mygraph, layout = 'dendrogram', circular = FALSE) + 
+  geom_edge_link() +
+  theme_void()
+ 
+ggraph(mygraph, layout = 'dendrogram', circular = TRUE) + 
+  geom_edge_diagonal() +
+  theme_void()
+```
+
