@@ -33,6 +33,7 @@ dat$origin_cluster <- ifelse(dat$n_cluster < 200, "Others", as.character(dat$Clu
 ## Stacked histogram, date, number and breakdown of cluster
 ```{r}
 dat %>% ggplot(aes(Date)) + geom_bar(aes(fill=origin_cluster), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases")
+ggsave("clusters.png")
 ```  
 
 ## Distibution of number of people infected by one person
@@ -44,8 +45,8 @@ write_csv(secondary, "secondary_infections.csv")
 ```
 ### Viz
 ```{r}
-secondary %>% filter(`Secondary infections` < 100) %>% summarize(avg = mean(`Secondary infections`))
-secondary %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = 3.075967, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Secondary infections caused by each patient") + ylab("Number of COVID-19 patients") + ggtitle("Distribution of number of secondary infections caused")
+secondary %>% filter(`Secondary infections` < 100) %>% summarize(avg = mean(`Secondary infections`), med = median(`Secondary infections`))
+secondary %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = 3.075967, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("Number of COVID-19 patients") + ggtitle("Distribution of number of  infections caused")
 ggsave("secondary_hist.png")
 ```
 
