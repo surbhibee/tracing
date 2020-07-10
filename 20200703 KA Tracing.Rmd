@@ -22,19 +22,34 @@ dat$Date <- as.Date(dat$Date, "%d-%b")
 
 # Data processing
 
+## Number of daily cases
+```{r}
+daily <- dat %>% group_by(Date) %>% summarize(Cases = n())
+write_csv(daily, "daily_cases.csv")
+```
+
+
 ## Classifying biggest clusters
 ```{r}
 dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n())
-dat$origin_cluster <- ifelse(dat$n_cluster < 200, "Others", as.character(dat$Cluster))
+dat %>% group_by(Cluster) %>% summarize(n_cluster = n())
+dat$origin_1 <- ifelse(dat$n_cluster < 100, "Others", as.character(dat$Cluster))
+dat$origin_2 <- ifelse(dat$n_cluster < 200, "Others", as.character(dat$Cluster))
 ```
 
 # Visualizations
 
 ## Stacked histogram, date, number and breakdown of cluster
 ```{r}
-dat %>% ggplot(aes(Date)) + geom_bar(aes(fill=origin_cluster), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases")
-ggsave("clusters.png")
+dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin_1), alpha = 0.7, color = "black", size = 0.1) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2", direction = 1) + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Proportion of cases confirmed daily")
+ggsave("clusters_stacked.png")
+
+dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_2), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases confirmed daily")
+ggsave("clusters_pct.png")
 ```  
+```{r}
+dat %>% filter(Date < "2020-05-31") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_1), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases")
+```
 
 ## Distibution of number of people infected by one person
 
@@ -42,11 +57,14 @@ ggsave("clusters.png")
 ```{r}
 secondary <- dat %>% group_by(P) %>% summarize(`Secondary infections` = n()) 
 write_csv(secondary, "secondary_infections.csv")
+
+june26_parent <- secondary %>% filter(P <= 11005 & P != 0)
+june26_parent %>% summarise(mean = mean(`Secondary infections`))
 ```
 ### Viz
 ```{r}
 secondary %>% filter(`Secondary infections` < 100) %>% summarize(avg = mean(`Secondary infections`), med = median(`Secondary infections`))
-secondary %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = 3.075967, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("Number of COVID-19 patients") + ggtitle("Distribution of number of  infections caused")
+june26_parent %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = 3.075967, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("Number of COVID-19 patients") + ggtitle("Distribution of number of  infections caused")
 ggsave("secondary_hist.png")
 ```
 
