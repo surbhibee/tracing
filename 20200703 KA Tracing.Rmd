@@ -43,10 +43,13 @@ dat$origin_2 <- ifelse(dat$n_cluster < 200, "Others", as.character(dat$Cluster))
 ```{r}
 dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin_1), alpha = 0.7, color = "black", size = 0.1) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2", direction = 1) + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Proportion of cases confirmed daily")
 ggsave("clusters_stacked.png")
+```
 
-dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_2), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases confirmed daily")
+
+```{r}
+dat %>% filter(Date > "2020-04-01" & Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_2), alpha = 0.7) + theme_light() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases confirmed daily")
 ggsave("clusters_pct.png")
-```  
+```
 ```{r}
 dat %>% filter(Date < "2020-05-31") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_1), alpha = 0.7) + theme_classic() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases")
 ```
