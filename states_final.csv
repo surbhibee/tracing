@@ -1,4 +1,4 @@
-Date,State,Daily cases,"Daily cases, seven day moving average",Status,State name
+Date,State,Daily cases,Daily Confirmed Cases,Status,State name
 2020-03-14,AN,0,NA,Falling,Andaman and Nicobar
 2020-03-14,AP,1,NA,Rising,Andhra Pradesh
 2020-03-14,AR,0,NA,Rising,Arunachal Pradesh

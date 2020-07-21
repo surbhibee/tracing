@@ -18,7 +18,7 @@ cases <- raw %>% filter(Status == "Confirmed") %>% select(-UN, -TT, -LD, -DD)
 
 column <- cases %>% select(-Status)
 row <- cases %>% pivot_longer(c(3:length(cases)), names_to = "State", values_to = "Daily cases") %>% select(-Status) 
-row <- row %>% group_by(State) %>% mutate(`Daily cases, seven day moving average` = (lag(`Daily cases`, 3) + lag(`Daily cases`, 2) + lag(`Daily cases`, 1) + `Daily cases` + lead(`Daily cases`, 1) + lead(`Daily cases`, 2) + lead(`Daily cases`, 3))/7)
+row <- row %>% group_by(State) %>% mutate(`Daily Confirmed Cases` = (lag(`Daily cases`, 3) + lag(`Daily cases`, 2) + lag(`Daily cases`, 1) + `Daily cases` + lead(`Daily cases`, 1) + lead(`Daily cases`, 2) + lead(`Daily cases`, 3))/7)
 write_csv(row, "row_state.csv")
 ```
 # Facet wrapped grid of all
@@ -28,7 +28,7 @@ row %>% filter(Date >= "2020-04-01") %>% ggplot(aes(x = Date, y = `Daily cases, 
 # Verify classification by comparing seven day average of case increase in last three weeks by state
 
 ```{r}
-classification <- row %>% filter(Date == "2020-07-11" | Date == "2020-06-27") %>% arrange(State, Date) %>% group_by(State) %>% mutate(diff = `Daily cases, seven day moving average` - lag(`Daily cases, seven day moving average`), pct = 100*diff / `Daily cases, seven day moving average`)
+classification <- row %>% filter(Date == "2020-07-11" | Date == "2020-06-27") %>% arrange(State, Date) %>% group_by(State) %>% mutate(diff = `Daily Confirmed Cases` - lag(`Daily Confirmed Cases`), pct = 100*diff / `Daily Confirmed Cases`)
 ```
 
 # Merge in classification and state names
@@ -39,13 +39,19 @@ write_csv(full, "states_final.csv")
 label <- full %>% filter(Date == "2020-07-14")
 ```
 # Final graphs
+
 ```{r}
+full %>% filter(Date >= "2020-04-01" & Status == "Rising") %>% ggplot() + geom_area(aes(x = Date, y = `Daily Confirmed Cases`), alpha = 0.4, fill = "#9c261e", color = "#3b0805", size = 0.2) + facet_wrap(~`State name`, scales = "free") + theme_minimal() + theme(axis.text.x  =  element_blank(), axis.text.y  = element_text(size = 5),  panel.grid =  element_blank(), axis.title.x = element_blank(), strip.text = element_text(size = 6))
+ggsave("rising_scale.png")
+
+full %>% filter(Date >= "2020-04-01" & Status != "Rising") %>% ggplot() + geom_area(aes(x = Date, y = `Daily Confirmed Cases`), alpha = 0.5, fill = "#63b877", color = "#053b12", size = 0.2) + facet_wrap(~`State name`, scales = "free", ) + theme_minimal() + theme(axis.text.x  =  element_blank(), axis.text.y  = element_text(size = 5),  panel.grid =  element_blank(), axis.title.x = element_blank(), strip.text = element_text(size = 8))
+ggsave("stable_scale.png")
+```
+
+```{r, eval = FALSE}
 full <- full %>% arrange(State, Date)
 full %>% filter(Date >= "2020-04-01" & Status == "Rising") %>% ggplot() + geom_area(aes(x = Date, y = `Daily cases, seven day moving average`), alpha = 0.4, fill = "#9c261e", color = "#3b0805", size = 0.2) + geom_label_repel(aes(x = Date, y = `Daily cases, seven day moving average`, label = ifelse(Date == "2020-07-04", lead(`Daily cases`, 10), "")), size = 2, segment.size = 0.1, label.size = NA, alpha = 0.9) + facet_wrap(~`State name`, scales = "free") + theme_minimal() + theme(axis.text =  element_blank(), panel.grid =  element_blank(), axis.title.x = element_blank(), strip.text = element_text(size = 8))
 ggsave("rising.png")
-
-full %>% filter(Date >= "2020-04-01" & Status == "Rising") %>% ggplot() + geom_area(aes(x = Date, y = `Daily cases, seven day moving average`), alpha = 0.4, fill = "#9c261e", color = "#3b0805", size = 0.2) + geom_label_repel(aes(x = Date, y = `Daily cases, seven day moving average`, label = ifelse(Date == "2020-07-04", lead(`Daily cases`, 10), "")), size = 2, segment.size = 0.1, label.size = NA, alpha = 0.9) + facet_wrap(~`State name`) + theme_minimal() + theme( panel.grid =  element_blank(), axis.title.x = element_blank(), strip.text = element_text(size = 8))
-ggsave("rising_scale.png")
 
 full %>% filter(Date >= "2020-04-01" & Status != "Rising") %>% ggplot() + geom_area(aes(x = Date, y = `Daily cases, seven day moving average`), alpha = 0.5, fill = "#63b877", color = "#053b12", size = 0.2) + geom_label_repel(aes(x = Date, y = `Daily cases, seven day moving average`, label = ifelse(Date == "2020-07-04", lead(`Daily cases`, 10), "")), size = 2, segment.size = 0.1, label.size = NA, alpha = 0.9) + facet_wrap(~`State name`, scales = "free") + theme_minimal() + theme(axis.text =  element_blank(), panel.grid =  element_blank(), axis.title.x = element_blank(), strip.text = element_text(size = 8))
 ggsave("stable_falling.png")

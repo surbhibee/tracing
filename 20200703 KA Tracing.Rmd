@@ -32,9 +32,12 @@ write_csv(daily, "daily_cases.csv")
 ## Classifying biggest clusters
 ```{r}
 dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n())
-dat %>% group_by(Cluster) %>% summarize(n_cluster = n())
-dat$origin_1 <- ifelse(dat$n_cluster < 100, "Others", as.character(dat$Cluster))
-dat$origin_2 <- ifelse(dat$n_cluster < 200, "Others", as.character(dat$Cluster))
+dat %>% group_by(Cluster) %>% summarize(n_cluster = n()) %>% arrange(-n_cluster)
+dat$origin <- dat$Cluster
+dat$origin <- ifelse(dat$origin < 100, "Others", ifelse(dat$origin == "Influenza like illness", "ILI", ifelse(dat$origin == "Severe Acute Respiratory Infection", "SARI", as.character(dat$Cluster))))
+
+dat$origin_1 <- ifelse(dat$n_cluster < 1000, "Others", as.character(dat$origin))
+dat$origin_2 <- ifelse(dat$n_cluster < 1000, "Others", as.character(dat$origin))
 ```
 
 # Visualizations
@@ -47,7 +50,7 @@ ggsave("clusters_stacked.png")
 
 
 ```{r}
-dat %>% filter(Date > "2020-04-01" & Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_2), alpha = 0.7) + theme_light() + theme(legend.position="bottom") + scale_fill_brewer(palette="Dark2") + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases confirmed daily")
+dat %>% filter(Date > "2020-04-01" & Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_2), alpha = 0.7) + theme_light() + theme(legend.position="bottom")+ scale_fill_brewer(palette="Dark2", direction = 1) + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases confirmed daily")
 ggsave("clusters_pct.png")
 ```
 ```{r}
@@ -57,12 +60,27 @@ dat %>% filter(Date < "2020-05-31") %>% ggplot(aes(Date)) + geom_bar( aes(fill=o
 ## Distibution of number of people infected by one person
 
 ### Data wrangle
+
+#### Up till July 5, how many people have known contact history
 ```{r}
-secondary <- dat %>% group_by(P) %>% summarize(`Secondary infections` = n()) 
+july5_dat <- dat %>% filter(Date <= "2020-07-05")
+july5_known <- july5_dat %>% filter(Cluster != "Unknown")
+
+paste("Of the", nrow(july5_dat), "COVID-19 cases confirmed in Karnataka by July 5,", nrow(july5_known), "or", 100*nrow(july5_known)/nrow(july5_dat),"have a known contact history.")
+```
+
+```{r}
+secondary <- dat %>% filter(Cluster != "Unknown") %>% group_by(P) %>% summarize(`Secondary infections` = n()) 
 write_csv(secondary, "secondary_infections.csv")
 
-june26_parent <- secondary %>% filter(P <= 11005 & P != 0)
-june26_parent %>% summarise(mean = mean(`Secondary infections`))
+july5_parent <- secondary %>% filter(P <= 23474 & P != 0)
+july5_parent %>% summarise(mean = mean(`Secondary infections`))
+
+# Percentage of people with known contacts who caused secondary infections
+nrow(july5_parent)/nrow(july5_known)*100
+
+# Number of people with no contacts who caused no secondary infections
+nrow(july5_known)-nrow(july5_parent)
 ```
 ### Viz
 ```{r}
