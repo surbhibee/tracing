@@ -53,6 +53,9 @@ setdiff(july7_parent_p$P, july7_parent_c$Case)
 * Collapsing on P seems to work better
 
 ```{r, echo=FALSE}
+temp <- dat %>% ungroup() %>% select(Case, Date)
+names(temp) <- c("P", "Date confirmed")
+july7_parent_p <- left_join(july7_parent_p, temp)
 write_csv(july7_parent_p, "secondary_infections.csv")
 paste(nrow(july7_parent_p), "cases diagnosed and contact traced till July 7 caused secondary infections by July 21, 2020")
 ```
