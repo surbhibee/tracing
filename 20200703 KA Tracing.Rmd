@@ -40,6 +40,12 @@ dat$origin_1 <- ifelse(dat$n_cluster < 1000, "Others", as.character(dat$origin))
 dat$origin_2 <- ifelse(dat$n_cluster < 1000, "Others", as.character(dat$origin))
 ```
 
+## Community transmission? -- origins of July cases
+```{r}
+dat %>% filter(Date >= "2020-07-01") %>% group_by(Cluster) %>% summarize(number = n()) %>% arrange(-number)
+dat %>% filter(Date >= "2020-07-01") %>% ungroup() %>% summarize(number = n()) 
+```
+
 # Visualizations
 
 ## Stacked histogram, date, number and breakdown of cluster

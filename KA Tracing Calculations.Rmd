@@ -1,0 +1,109 @@
+---
+title: "KA Contact Tracing"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+rm(list = ls())
+library(readxl)
+library(tidyverse)
+library(ggraph)
+library(igraph)
+library(ggrepel)
+setwd("~/Documents/GitHub/tracing")
+```
+
+```{r, message=FALSE, warning=FALSE}
+dat <- read_csv("KAtrace.csv",  skip = 19)
+dat$Date <- as.Date(dat$Date, "%d-%b")
+```
+
+```{r, echo=FALSE}
+## Number of daily cases
+daily <- dat %>% group_by(Date) %>% summarize(Cases = n())
+write_csv(daily, "daily_cases.csv")
+```
+
+# Cleaning & summarizing Clusters variable
+```{r}
+dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n()) #Variable for number of cases in each cluster
+cases_per_cluster <- dat %>% group_by(Cluster) %>% summarize(n_cluster = n()) %>% arrange(-n_cluster) #Table for number of cases in each cluster
+
+dat$origin <- ifelse(dat$n_cluster < 20, "Others", ifelse(dat$Cluster == "Influenza like illness", "ILI", ifelse(dat$Cluster == "Severe Acute Respiratory Infection", "SARI", as.character(dat$Cluster)))) #Creating a cleaned up variable with information from `Clusters' for diagramming
+```
+
+# Superspreading behaviour 
+
+## How many cases confirmed and contact traced till July 7 caused secondary infections within the next two weeks (till July 21)
+```{r}
+july7_parent_c <- dat %>% filter(Case <= 26815 & C == 1) # Collapsing C variable
+nrow(july7_parent_c)
+
+july7_parent_p <- dat %>% group_by(P) %>% summarize(secondary = n()) %>% filter(P <= 26815 & P != 0) # Collapsing P variable
+nrow(july7_parent_p)
+```
+
+* Looking at cases that do not overlap in the two approaches
+```{r}
+setdiff(july7_parent_c$Case, july7_parent_p$P)
+setdiff(july7_parent_p$P, july7_parent_c$Case) 
+```
+* Collapsing on P seems to work better
+
+```{r, echo=FALSE}
+write_csv(july7_parent_p, "secondary_infections.csv")
+paste(nrow(july7_parent_p), "cases diagnosed and contact traced till July 7 caused secondary infections by July 21, 2020")
+```
+
+### How many secondary infections did these 1684 cases cause
+```{r}
+sum(july7_parent_p$secondary)
+```
+
+## How many cases confirmed and contact traced till July 7 did NOT cause secondary infections within the next two weeks (till July 21)
+
+### Subset the data to approximate proportion who were contact traced
+I assume that cases fulfilling all of the following criteria were *NOT* contact traced at all:
+* Cluster is Unknown 
+* Reason is NA
+* C = 0
+* P = 0  
+
+```{r}
+july21_traced <- dat %>% filter(Cluster != "Unknown" | !is.na(Reason) | C != 0 | P != 0)
+```
+
+```{r, echo=FALSE}
+paste(nrow(july21_traced), "out of", nrow(dat), "cases were contact traced till July 21")
+```
+
+* Checking if this makes sense by recalculating number of parents that caused infections by July 5, should be same as above (a lower figure would indicate that I oversubsetted)
+```{r}
+temp <- july21_traced %>% group_by(P) %>% summarize(secondary = n()) %>% filter(P <= 26815 & P != 0) # Collapsing P variable
+nrow(temp) #seems right
+```
+
+### Number of cases confirmed by July 7 that did not cause other infections 
+```{r}
+july21_traced <- dat %>% filter(Case <= 26815)
+```
+
+
+```{r, echo=FALSE}
+paste("Of the", nrow(july21_traced), "cases that were confirmed by July 7 and contact traced", nrow(july7_parent_p), "caused secondary infections, while", nrow(july21_traced)-nrow(july7_parent_p), "did not cause any secondary infections at all")
+```
+
+## Average number of secondary infections caused by cases that do cause infections
+```{r}
+mean_infections <- as.numeric(july7_parent_p %>% summarise(mean = mean(secondary)))
+july7_parent_p %>% summarize(avg = mean(secondary), med = median(secondary))
+july7_parent_p %>% ggplot(aes(secondary)) + geom_histogram() + geom_vline(aes(xintercept = mean_infections, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("No. of COVID-19 patients that cause a secondary infection") + ggtitle("Distribution of number of  infections caused")
+ggsave("secondary_hist.png")
+```
+# Visualization of change in cluster size over time
+```{r}
+dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin), alpha = 0.5, color = "black", size = 0.1) + theme_classic() + theme(legend.position="bottom", legend.spacing = unit(0.4, "points"), legend.text = element_text(size = 6))  + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Proportion of cases confirmed daily")
+ggsave("clusters_stacked.png")
+```
