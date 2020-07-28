@@ -31,7 +31,12 @@ write_csv(daily, "daily_cases.csv")
 dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n()) #Variable for number of cases in each cluster
 cases_per_cluster <- dat %>% group_by(Cluster) %>% summarize(n_cluster = n()) %>% arrange(-n_cluster) #Table for number of cases in each cluster
 
-dat$origin <- ifelse(dat$n_cluster < 20, "Others", ifelse(dat$Cluster == "Influenza like illness", "ILI", ifelse(dat$Cluster == "Severe Acute Respiratory Infection", "SARI", as.character(dat$Cluster)))) #Creating a cleaned up variable with information from `Clusters' for diagramming
+dat$origin <- ifelse(dat$n_cluster < 20, "Under 20 cases", ifelse(dat$Cluster == "Influenza like illness", "ILI", ifelse(dat$Cluster == "Severe Acute Respiratory Infection", "SARI", ifelse(dat$Cluster == "TJ Congregation from 13th to 18th March in Delhi", "TJ Congregation", ifelse(dat$Cluster == "Pharmaceutical Company in Nanjangud", "Pharma Co, Nanjangud", as.character(dat$Cluster)))))) 
+
+dat$origin <- ifelse(dat$Cluster == "From Gujarat", "Domestic Travel", ifelse(dat$Cluster == "From Rajasthan", "Domestic Travel", ifelse(dat$Cluster == "From the Southern States", "Domestic Travel", ifelse(dat$Cluster == "From Middle East", "International Travel",ifelse(dat$Cluster == "From United Kingdom", "International Travel",ifelse(dat$Cluster == "From the rest of Europe", "International Travel", ifelse(dat$Cluster == "From USA", "International Travel", ifelse(dat$Cluster == "From South America", "International Travel",ifelse(dat$Cluster == "Second Generation Contact", "Others", as.character(dat$origin))))))))))
+
+
+#Creating a cleaned up variable with information from `Clusters' for diagramming
 ```
 
 # Superspreading behaviour 
@@ -57,7 +62,7 @@ temp <- dat %>% ungroup() %>% select(Case, Date)
 names(temp) <- c("P", "Date confirmed")
 parents <- dat %>% group_by(P) %>% summarize(secondary = n()) %>% filter(P != 0)
 secondary <- left_join(parents, temp)
-write_csv(july7_parent_p, "secondary_infections.csv")
+write_csv(secondary, "secondary_infections.csv")
 paste(nrow(july7_parent_p), "cases diagnosed and contact traced till July 7 caused secondary infections by July 21, 2020")
 ```
 
@@ -89,14 +94,15 @@ temp <- july21_traced %>% group_by(P) %>% summarize(secondary = n()) %>% filter(
 nrow(temp) #seems right
 ```
 
-### Number of cases confirmed by July 7 that did not cause other infections 
+### Number of cases confirmed and traced by July 7 that did not cause other infections 
 ```{r}
-july21_traced <- dat %>% filter(Case <= 26815)
+july7_traced <- july21_traced %>% filter(Case <= 26815) # Number of cases confirmed and traced by July 7 
+nrow(july7_traced)-nrow(july7_parent_p) # Number of cases confirmed and traced by July 7 that did not cause other infections 
 ```
 
 
 ```{r, echo=FALSE}
-paste("Of the", nrow(july21_traced), "cases that were confirmed by July 7 and contact traced", nrow(july7_parent_p), "caused secondary infections, while", nrow(july21_traced)-nrow(july7_parent_p), "did not cause any secondary infections at all")
+paste("Of the", nrow(july7_traced), "cases that were confirmed by July 7 and contact traced", nrow(july7_parent_p), "caused secondary infections, while", nrow(july7_traced)-nrow(july7_parent_p), "did not cause any secondary infections at all")
 ```
 
 ## Average number of secondary infections caused by cases that do cause infections
@@ -106,8 +112,35 @@ july7_parent_p %>% summarize(avg = mean(secondary), med = median(secondary))
 july7_parent_p %>% ggplot(aes(secondary)) + geom_histogram() + geom_vline(aes(xintercept = mean_infections, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("No. of COVID-19 patients that cause a secondary infection") + ggtitle("Distribution of number of  infections caused")
 ggsave("secondary_hist.png")
 ```
+# Number of cases that caused more than 10  secondary infections
+```{r}
+x <- july7_parent_p %>% filter(secondary > 10)
+paste(nrow(x), "cases caused 10 or more secondary infections")
+```
+
+# % of cases with unknown P
+## March 9 - June 1
+```{r}
+p <- dat %>% filter(Date < "2020-05-01") %>% group_by(P) %>% summarize(secondary = n()) # number of secondary infections 
+x <- dat %>% filter(Date < "2020-05-01") %>% ungroup() %>% summarize(n = n()) # total cases
+```
+
+```{r,echo=FALSE}
+paste("Out of", as.numeric(x), "cases confirmed by June 1,", p$secondary[1], "(",100*p$secondary[1]/as.numeric(x),")", "had no contact history")
+```
+
+## July 1 - July 21
+```{r}
+p <- dat %>% group_by(P) %>% summarize(secondary = n()) # number of secondary infections 
+x <- dat %>% ungroup() %>% summarize(n = n()) # total cases
+```
+
+```{r,echo=FALSE}
+paste("Out of", as.numeric(x), "cases confirmed by June 1,", p$secondary[1], "(",100*p$secondary[1]/as.numeric(x),")", "had no contact history")
+```
+
 # Visualization of change in cluster size over time
 ```{r}
-dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin), alpha = 0.5, color = "black", size = 0.1) + theme_classic() + theme(legend.position="bottom", legend.spacing = unit(0.4, "points"), legend.text = element_text(size = 6))  + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Proportion of cases confirmed daily")
+dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent" & Cluster != "Second Generation Contact Absent" & Cluster != "Domestic Travel History Absent" & Cluster != "International Travel History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin), alpha = 0.8, color = "black", size = 0.1)  + scale_fill_brewer(palette = "Spectral") + theme_classic() + theme(legend.position="bottom", legend.spacing = unit(0.4, "points"), legend.text = element_text(size = 6))  + ggtitle("Distribution of case origins in Karnataka, March 9 - July 21, 2020") + ylab("Proportion of cases confirmed daily")
 ggsave("clusters_stacked.png")
 ```

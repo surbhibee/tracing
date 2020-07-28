@@ -396,6 +396,7 @@ nrow(july7_parent_p)</code></pre>
 <ul>
 <li>Collapsing on P seems to work better</li>
 </ul>
+<pre><code>## Joining, by = &quot;P&quot;</code></pre>
 <pre><code>## [1] &quot;1684 cases diagnosed and contact traced till July 7 caused secondary infections by July 21, 2020&quot;</code></pre>
 <div id="how-many-secondary-infections-did-these-1684-cases-cause" class="section level3">
 <h3>How many secondary infections did these 1684 cases cause</h3>
@@ -417,10 +418,12 @@ nrow(july7_parent_p)</code></pre>
 nrow(temp) #seems right</code></pre>
 <pre><code>## [1] 1684</code></pre>
 </div>
-<div id="number-of-cases-confirmed-by-july-7-that-did-not-cause-other-infections" class="section level3">
-<h3>Number of cases confirmed by July 7 that did not cause other infections</h3>
-<pre class="r"><code>july21_traced &lt;- dat %&gt;% filter(Case &lt;= 26815)</code></pre>
-<pre><code>## [1] &quot;Of the 26815 cases that were confirmed by July 7 and contact traced 1684 caused secondary infections, while 25131 did not cause any secondary infections at all&quot;</code></pre>
+<div id="number-of-cases-confirmed-and-traced-by-july-7-that-did-not-cause-other-infections" class="section level3">
+<h3>Number of cases confirmed and traced by July 7 that did not cause other infections</h3>
+<pre class="r"><code>july7_traced &lt;- july21_traced %&gt;% filter(Case &lt;= 26815) # Number of cases confirmed and traced by July 7 
+nrow(july7_traced)-nrow(july7_parent_p) # Number of cases confirmed and traced by July 7 that did not cause other infections </code></pre>
+<pre><code>## [1] 16211</code></pre>
+<pre><code>## [1] &quot;Of the 17895 cases that were confirmed by July 7 and contact traced 1684 caused secondary infections, while 16211 did not cause any secondary infections at all&quot;</code></pre>
 </div>
 </div>
 <div id="average-number-of-secondary-infections-caused-by-cases-that-do-cause-infections" class="section level2">

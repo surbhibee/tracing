@@ -35,14 +35,15 @@ dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n())
 dat %>% group_by(Cluster) %>% summarize(n_cluster = n()) %>% arrange(-n_cluster)
 dat$origin <- dat$Cluster
 dat$origin <- ifelse(dat$origin < 100, "Others", ifelse(dat$origin == "Influenza like illness", "ILI", ifelse(dat$origin == "Severe Acute Respiratory Infection", "SARI", as.character(dat$Cluster))))
-
-dat$origin_1 <- ifelse(dat$n_cluster < 1000, "Others", as.character(dat$origin))
-dat$origin_2 <- ifelse(dat$n_cluster < 1000, "Others", as.character(dat$origin))
 ```
 
 ## Community transmission? -- origins of July cases
 ```{r}
 dat %>% filter(Date >= "2020-07-01") %>% group_by(Cluster) %>% summarize(number = n()) %>% arrange(-number)
+```
+
+## Total number of new cases in July
+```{r}
 dat %>% filter(Date >= "2020-07-01") %>% ungroup() %>% summarize(number = n()) 
 ```
 
@@ -55,7 +56,7 @@ ggsave("clusters_stacked.png")
 ```
 
 
-```{r, eval = FALSE}
+```{r, eval = FALSE, include = FALSE}
 dat %>% filter(Date > "2020-04-01" & Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent") %>% ggplot(aes(Date)) + geom_bar( aes(fill=origin_2), alpha = 0.7) + theme_light() + theme(legend.position="bottom")+ scale_fill_brewer(palette="Dark2", direction = 1) + ggtitle("Distribution of cases diagnosed from various clusters over time") + ylab("Number of cases confirmed daily")
 ggsave("clusters_pct.png")
 ```
@@ -64,17 +65,17 @@ ggsave("clusters_pct.png")
 
 ### Data wrangle
 
-#### Up till July 5, how many people have known contact history
+#### Up till July 5, how many people are parents of cases
 ```{r}
 july5_dat <- dat %>% filter(Date <= "2020-07-05")
-july5_known <- july5_dat %>% filter(Cluster != "Unknown")
+july5_p <- july5_dat %>% filter(P != 0)
 
-paste("Of the", nrow(july5_dat), "COVID-19 cases confirmed in Karnataka by July 5,", nrow(july5_known), "or", 100*nrow(july5_known)/nrow(july5_dat),"have a known contact history.")
+paste("Of the", nrow(july5_dat), "COVID-19 cases confirmed in Karnataka by July 5,", nrow(july5_p), "or", 100*nrow(july5_p)/nrow(july5_dat),"have a known parent")
 ```
 
 #### Summarize number of cases a given cases was "Parent" (P) of:
 ```{r}
-secondary <- dat %>% filter(Cluster != "Unknown") %>% group_by(P) %>% summarize(`Secondary infections` = n()) 
+secondary <- dat %>% filter(P != 0) %>% group_by(P) %>% summarize(`Secondary infections` = n()) 
 write_csv(secondary, "secondary_infections.csv")
 
 # Focusing on cases diagnosed till July 5 as parents
@@ -86,22 +87,20 @@ july5_parent <- secondary %>% filter(P <= 23474 & P != 0)
 # Mean infections caused by infecting parent
 mean_infections <- as.numeric(july5_parent %>% summarise(mean = mean(`Secondary infections`)))
 
-# Number of people with known contacts who caused secondary infections in others with known contacts
+# Number of people with who caused secondary infections in others 
 nrow(july5_parent)
 
-# Percentage of people with known contacts who caused secondary infections
-nrow(july5_parent)/nrow(july5_known)*100
+# Total number of secondary infections caused where the parent was known
+sum(july5_parent$`Secondary infections`)
 
-# Number of people with known contacts who caused no secondary infections
-nrow(july5_known)-nrow(july5_parent)
+# Total number of people who were contact traced but did not cause secondary infections
 
-100*(nrow(july5_known)-nrow(july5_parent))/nrow(july5_known)
 ```
 
 #### Distribution of number of infections caused by infecting parent
 ```{r}
 secondary %>% filter(`Secondary infections` < 100) %>% summarize(avg = mean(`Secondary infections`), med = median(`Secondary infections`))
-june26_parent %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = mean_infections, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("No. of COVID-19 patients that cause a secondary infection") + ggtitle("Distribution of number of  infections caused")
+july5_parent %>% filter(`Secondary infections` < 100) %>% ggplot(aes(`Secondary infections`)) + geom_histogram() + geom_vline(aes(xintercept = mean_infections, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("No. of COVID-19 patients that cause a secondary infection") + ggtitle("Distribution of number of  infections caused")
 ggsave("secondary_hist.png")
 ```
 
