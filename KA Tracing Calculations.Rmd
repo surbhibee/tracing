@@ -26,33 +26,33 @@ daily <- dat %>% group_by(Date) %>% summarize(Cases = n())
 write_csv(daily, "daily_cases.csv")
 ```
 
-# Cleaning & summarizing Clusters variable
-```{r}
+```{r, echo=FALSE}
+## Cleaning the "Others" variable, which seems to misclassify some domestic travel cases
+
+dat$Cluster_original <- dat$Cluster
+dat$Cluster <- ifelse(grepl("Travel", dat$Reason, fixed = TRUE), "Domestic Travel", ifelse(grepl("travel", dat$Reason, fixed = TRUE), "Domestic Travel", dat$Cluster))
 dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n()) #Variable for number of cases in each cluster
 cases_per_cluster <- dat %>% group_by(Cluster) %>% summarize(n_cluster = n()) %>% arrange(-n_cluster) #Table for number of cases in each cluster
 
 dat$origin <- ifelse(dat$n_cluster < 20, "Under 20 cases", ifelse(dat$Cluster == "Influenza like illness", "ILI", ifelse(dat$Cluster == "Severe Acute Respiratory Infection", "SARI", ifelse(dat$Cluster == "TJ Congregation from 13th to 18th March in Delhi", "TJ Congregation", ifelse(dat$Cluster == "Pharmaceutical Company in Nanjangud", "Pharma Co, Nanjangud", as.character(dat$Cluster)))))) 
 
-dat$origin <- ifelse(dat$Cluster == "From Gujarat", "Domestic Travel", ifelse(dat$Cluster == "From Rajasthan", "Domestic Travel", ifelse(dat$Cluster == "From the Southern States", "Domestic Travel", ifelse(dat$Cluster == "From Middle East", "International Travel",ifelse(dat$Cluster == "From United Kingdom", "International Travel",ifelse(dat$Cluster == "From the rest of Europe", "International Travel", ifelse(dat$Cluster == "From USA", "International Travel", ifelse(dat$Cluster == "From South America", "International Travel",ifelse(dat$Cluster == "Second Generation Contact", "Others", as.character(dat$origin))))))))))
-
-
-#Creating a cleaned up variable with information from `Clusters' for diagramming
+dat$origin <- ifelse(dat$Cluster == "From Gujarat", "Domestic Travel", ifelse(dat$Cluster == "From Maharashtra", "Domestic Travel", ifelse(dat$Cluster == "From Rajasthan", "Domestic Travel", ifelse(dat$Cluster == "From the Southern States", "Domestic Travel", ifelse(dat$Cluster == "From Middle East", "International Travel",ifelse(dat$Cluster == "From United Kingdom", "International Travel",ifelse(dat$Cluster == "From the rest of Europe", "International Travel", ifelse(dat$Cluster == "From USA", "International Travel", ifelse(dat$Cluster == "From South America", "International Travel",ifelse(dat$Cluster == "Second Generation Contact", "Others", as.character(dat$origin)))))))))))
 ```
 
 # Superspreading behaviour 
 
 ## How many cases confirmed and contact traced till July 7 caused secondary infections within the next two weeks (till July 21)
 ```{r}
-july7_parent_c <- dat %>% filter(Case <= 26815 & C == 1) # Collapsing C variable
+july7_parent_c <- dat %>% filter(Cluster != "Unknown") %>% filter(Case <= 26815 & C == 1) # Collapsing C variable
 nrow(july7_parent_c)
 
-july7_parent_p <- dat %>% group_by(P) %>% summarize(secondary = n()) %>% filter(P <= 26815 & P != 0) # Collapsing P variable
+july7_parent_p <- dat %>% filter(Cluster != "Unknown") %>% group_by(P) %>% summarize(secondary = n()) %>% filter(P <= 26815 & P != 0 ) # Collapsing P variable
 nrow(july7_parent_p)
 ```
 
-* Looking at cases that do not overlap in the two approaches
-```{r}
-setdiff(july7_parent_c$Case, july7_parent_p$P)
+```{r, echo=FALSE}
+#* Looking at cases that do not overlap in the two approaches
+setdiff(july7_parent_c$Case, july7_parent_p$P) 
 setdiff(july7_parent_p$P, july7_parent_c$Case) 
 ```
 * Collapsing on P seems to work better
@@ -73,30 +73,33 @@ sum(july7_parent_p$secondary)
 
 ## How many cases confirmed and contact traced till July 7 did NOT cause secondary infections within the next two weeks (till July 21)
 
-### Subset the data to approximate proportion who were contact traced
-I assume that cases fulfilling all of the following criteria were *NOT* contact traced at all:
-* Cluster is Unknown 
-* Reason is NA
-* C = 0
-* P = 0  
+### Subset the data to  proportion who were contact traced (i.e. Cluster is not Unknown)
 
 ```{r}
-july21_traced <- dat %>% filter(Cluster != "Unknown" | !is.na(Reason) | C != 0 | P != 0)
+#july21_traced <- dat %>% filter(Cluster != "Unknown" | !is.na(Reason) | C != 0 | P != 0)
+july21_traced <- dat %>% filter(Cluster != "Unknown")
 ```
 
 ```{r, echo=FALSE}
 paste(nrow(july21_traced), "out of", nrow(dat), "cases were contact traced till July 21")
 ```
 
-* Checking if this makes sense by recalculating number of parents that caused infections by July 5, should be same as above (a lower figure would indicate that I oversubsetted)
-```{r}
+
+```{r, include=FALSE}
+# Checking if this makes sense by recalculating number of parents that caused infections by July 7, should be same as above (a lower figure would indicate that I oversubsetted)
 temp <- july21_traced %>% group_by(P) %>% summarize(secondary = n()) %>% filter(P <= 26815 & P != 0) # Collapsing P variable
 nrow(temp) #seems right
+```
+### Total number of secondary infections caused by these cases
+```{r}
+sum(temp$secondary)
 ```
 
 ### Number of cases confirmed and traced by July 7 that did not cause other infections 
 ```{r}
 july7_traced <- july21_traced %>% filter(Case <= 26815) # Number of cases confirmed and traced by July 7 
+nrow(july7_traced)
+nrow(july7_parent_p)
 nrow(july7_traced)-nrow(july7_parent_p) # Number of cases confirmed and traced by July 7 that did not cause other infections 
 ```
 
@@ -119,24 +122,46 @@ paste(nrow(x), "cases caused 10 or more secondary infections")
 ```
 
 # % of cases with unknown P
-## March 9 - June 1
+## March 9 - May 1
 ```{r}
 p <- dat %>% filter(Date < "2020-05-01") %>% group_by(P) %>% summarize(secondary = n()) # number of secondary infections 
 x <- dat %>% filter(Date < "2020-05-01") %>% ungroup() %>% summarize(n = n()) # total cases
 ```
 
 ```{r,echo=FALSE}
-paste("Out of", as.numeric(x), "cases confirmed by June 1,", p$secondary[1], "(",100*p$secondary[1]/as.numeric(x),")", "had no contact history")
+paste("Out of", as.numeric(x), "cases confirmed by June 1,", p$secondary[1], "(",100*p$secondary[1]/as.numeric(x),")", "had no known parent")
 ```
 
-## July 1 - July 21
+## till July 21
 ```{r}
 p <- dat %>% group_by(P) %>% summarize(secondary = n()) # number of secondary infections 
 x <- dat %>% ungroup() %>% summarize(n = n()) # total cases
 ```
 
 ```{r,echo=FALSE}
-paste("Out of", as.numeric(x), "cases confirmed by June 1,", p$secondary[1], "(",100*p$secondary[1]/as.numeric(x),")", "had no contact history")
+paste("Out of", as.numeric(x), "cases confirmed by June 1,", p$secondary[1], "(",100*p$secondary[1]/as.numeric(x),")", "had no known parent")
+```
+
+## Collapsing and making a graph
+```{r}
+unknown_p <- dat %>% filter(!is.na(P))
+unknown_p$known_p <- ifelse(unknown_p$P == 0, 0, 1)
+unknown_p <- unknown_p %>% ungroup() %>% mutate(knowns = cumsum(known_p)) %>% select(Case, Date, knowns) 
+unknown_p <- unknown_p %>% filter(Date > "2020-03-10") %>% group_by(Date) %>% filter(row_number()==n()) %>% filter(!is.na(Date))
+unknown_p$known_parent <- 100*unknown_p$knowns/unknown_p$Case
+
+ggplot(unknown_p, aes(x = Date, y = known_parent)) + geom_line() + theme_minimal() + ggtitle("Percentage of Total Cases With Known Source of Infection Has Been Declining") + ylab("% of Cases With Known Source of Infection")
+ggsave("known_transmitter.png")
+```
+# % of cases were "contact under tracing"
+```{r}
+may <- dat %>% filter(Date < "2020-05-01") %>% group_by(Cluster) %>% summarize(number = n()) 
+x <- dat %>% filter(Date < "2020-05-01") %>% ungroup() %>% summarize(n = n())
+100*63/563
+
+total <- dat %>% group_by(Cluster) %>% summarize(number = n())
+x <- dat %>% ungroup() %>% summarize(n = n())
+100*34100/x[1]
 ```
 
 # Visualization of change in cluster size over time
