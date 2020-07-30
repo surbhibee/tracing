@@ -30,11 +30,20 @@ write_csv(daily, "daily_cases.csv")
 ## Cleaning the "Others" variable, which seems to misclassify some domestic travel cases
 
 dat$Cluster_original <- dat$Cluster
-dat$Cluster <- ifelse(grepl("Travel", dat$Reason, fixed = TRUE), "Domestic Travel", ifelse(grepl("travel", dat$Reason, fixed = TRUE), "Domestic Travel", dat$Cluster))
+dat$Cluster <- ifelse(grepl("Travel", dat$Reason, fixed = TRUE), "Domestic Travel", ifelse(grepl("Delhi", dat$Reason, fixed = TRUE), "Domestic Travel", ifelse(grepl("travel", dat$Reason, fixed = TRUE), "Domestic Travel", dat$Cluster)))
+
+dat$Cluster <- ifelse(grepl("Indonesia", dat$Reason, fixed = TRUE), "International Travel", ifelse(grepl("Dubai", dat$Reason, fixed = TRUE), "International Travel", ifelse(grepl("London", dat$Reason, fixed = TRUE), "International Travel", ifelse(grepl("Colombo", dat$Reason, fixed = TRUE), "International Travel", ifelse(grepl("Nepal", dat$Reason, fixed = TRUE), "International Travel", ifelse(grepl("Malaysia", dat$Reason, fixed = TRUE), "International Travel", dat$Cluster))))))
+
+o <- dat %>% filter(Cluster == "Others")
+o_r <- o %>% group_by(Reason) %>% summarize(n = n()) %>% arrange(-n)
+```
+
+
+```{r, echo=FALSE}
 dat <- dat %>% group_by(Cluster) %>% mutate(n_cluster = n()) #Variable for number of cases in each cluster
 cases_per_cluster <- dat %>% group_by(Cluster) %>% summarize(n_cluster = n()) %>% arrange(-n_cluster) #Table for number of cases in each cluster
 
-dat$origin <- ifelse(dat$n_cluster < 20, "Under 20 cases", ifelse(dat$Cluster == "Influenza like illness", "ILI", ifelse(dat$Cluster == "Severe Acute Respiratory Infection", "SARI", ifelse(dat$Cluster == "TJ Congregation from 13th to 18th March in Delhi", "TJ Congregation", ifelse(dat$Cluster == "Pharmaceutical Company in Nanjangud", "Pharma Co, Nanjangud", as.character(dat$Cluster)))))) 
+dat$origin <- ifelse(dat$Cluster == "Influenza like illness", "ILI", ifelse(dat$Cluster == "Severe Acute Respiratory Infection", "SARI", ifelse(dat$Cluster == "TJ Congregation from 13th to 18th March in Delhi", "TJ Congregation", ifelse(dat$Cluster == "Pharmaceutical Company in Nanjangud", "Pharma Co, Nanjangud", as.character(dat$Cluster)))))
 
 dat$origin <- ifelse(dat$Cluster == "From Gujarat", "Domestic Travel", ifelse(dat$Cluster == "From Maharashtra", "Domestic Travel", ifelse(dat$Cluster == "From Rajasthan", "Domestic Travel", ifelse(dat$Cluster == "From the Southern States", "Domestic Travel", ifelse(dat$Cluster == "From Middle East", "International Travel",ifelse(dat$Cluster == "From United Kingdom", "International Travel",ifelse(dat$Cluster == "From the rest of Europe", "International Travel", ifelse(dat$Cluster == "From USA", "International Travel", ifelse(dat$Cluster == "From South America", "International Travel",ifelse(dat$Cluster == "Second Generation Contact", "Others", as.character(dat$origin)))))))))))
 ```
@@ -112,7 +121,9 @@ paste("Of the", nrow(july7_traced), "cases that were confirmed by July 7 and con
 ```{r}
 mean_infections <- as.numeric(july7_parent_p %>% summarise(mean = mean(secondary)))
 july7_parent_p %>% summarize(avg = mean(secondary), med = median(secondary))
-july7_parent_p %>% ggplot(aes(secondary)) + geom_histogram() + geom_vline(aes(xintercept = mean_infections, color = "Mean"), linetype="dashed") + theme_classic() + xlab("Number of infections caused by each patient") + ylab("No. of COVID-19 patients that cause a secondary infection") + ggtitle("Distribution of number of  infections caused")
+
+july7_parent_p %>% ggplot(aes(secondary)) + geom_histogram(boundary = 0, alpha = 0.8, fill = "#1a71a3") + geom_vline(aes(xintercept = mean_infections), , color = "Black", linetype="dashed") + theme_minimal() + xlab("Number of Secondary Infections Caused by Each Patient") + ylab("No. of Patients That Cause A Secondary Infection") + ggtitle("Distribution of Number of Secondary Infections Caused By COVID-19 Patients")  + scale_x_continuous(breaks = seq(0, 60,5), labels = seq(0,60, 5))
+
 ggsave("secondary_hist.png")
 ```
 # Number of cases that caused more than 10  secondary infections
@@ -166,6 +177,6 @@ x <- dat %>% ungroup() %>% summarize(n = n())
 
 # Visualization of change in cluster size over time
 ```{r}
-dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent" & Cluster != "Second Generation Contact Absent" & Cluster != "Domestic Travel History Absent" & Cluster != "International Travel History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin), alpha = 0.8, color = "black", size = 0.1)  + scale_fill_brewer(palette = "Spectral") + theme_classic() + theme(legend.position="bottom", legend.spacing = unit(0.4, "points"), legend.text = element_text(size = 6))  + ggtitle("Distribution of case origins in Karnataka, March 9 - July 21, 2020") + ylab("Proportion of cases confirmed daily")
+dat %>% filter(Cluster != "29-June Trace History Absent" & Cluster != "28-June Trace History Absent" & Cluster != "27-June Trace History Absent" & Cluster != "Second Generation Contact Absent" & Cluster != "Domestic Travel History Absent" & Cluster != "International Travel History Absent") %>% ggplot(aes(Date)) + geom_bar(position = "fill", aes(fill=origin), alpha = 1, color = "black", size = 0.05)  + scale_fill_brewer(palette = "Spectral") + theme_minimal() + theme(legend.position="bottom", legend.spacing = unit(0.4, "points"), legend.text = element_text(size = 8), legend.title = element_blank())  + ggtitle("Distribution of Case Origins in Karnataka, March 9 - July 21, 2020") + ylab("Proportion Of Cases Confirmed Daily")
 ggsave("clusters_stacked.png")
 ```
